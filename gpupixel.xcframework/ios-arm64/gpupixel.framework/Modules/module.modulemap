@@ -1,0 +1,11 @@
+framework module gpupixel {
+  umbrella header "gpupixel.h"
+  export *
+
+  module * { export * }
+}
+
+module gpupixel.Swift {
+  header "gpupixel-Swift.h"
+  requires objc
+}
