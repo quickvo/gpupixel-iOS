@@ -137,6 +137,8 @@ class GPUPIXEL_API GPUPixel {
 
   static std::string GetVersion(){ return "1.0.0";};
 
+  static void ReleaseResource();
+
 };
 
 }  // namespace gpupixel
