@@ -18,8 +18,6 @@
 @property (nonatomic, assign) CGFloat whithValue;
 @property (nonatomic, assign) CGFloat thinFaceValue;
 @property (nonatomic, assign) CGFloat eyeValue;
-@property (nonatomic, assign) CGFloat lipstickValue;
-@property (nonatomic, assign) CGFloat blusherValue;
 
 @property (nonatomic, assign) CGFloat contrastValue;
 @property (nonatomic, assign) CGFloat exposureValue;
@@ -38,9 +36,6 @@
 @property(nonatomic, assign) CGFloat highlightsValue;
 @property(nonatomic, assign) CGFloat vignetValue;
 
-@property(nonatomic, assign) CGFloat effectSweetValue;
-@property(nonatomic, assign) CGFloat effectWhiteValue;
-
 @property (nonatomic, assign) CGFloat adjustMouth;
 @property (nonatomic, assign) CGFloat thinNose;
 @property (nonatomic, assign) CGFloat thinChin;
@@ -49,6 +44,23 @@
 @property (nonatomic, assign) CGFloat nosePosition;
 
 @property (nonatomic, assign) NSInteger rotation;
+
+
+@property (nonatomic, assign) CGFloat lipstickValue;
+@property (nonatomic, assign) CGFloat blusherValue;
+@property (nonatomic, assign) CGFloat lashValue;
+@property (nonatomic, assign) CGFloat whitenTeethValue;
+@property (nonatomic, assign) CGFloat eyeShadowValue;
+@property (nonatomic, assign) CGFloat eyeLinesValue;
+@property (nonatomic, assign) CGFloat browValue;
+@property (nonatomic, assign) NSInteger lipstickType;
+@property (nonatomic, assign) NSInteger blushType;
+@property (nonatomic, assign) NSInteger lashType;
+@property (nonatomic, assign) NSInteger eyeShadowType;
+@property (nonatomic, assign) NSInteger eyeLinesType;
+@property (nonatomic, assign) NSInteger browType;
+
+
 
 
 - (instancetype)initWithDelegate:(id<RTCBeautyFilterDelegate>)delegate;
@@ -60,8 +72,18 @@
 - (void)setStyleSink:(NSInteger )index level:(CGFloat )level;
 - (void)setStikerPath:(NSString *)path;
 
+- (void)setStyleBeautyIndex:(NSInteger )index;
+- (void)setStyleBeautyLevel:(CGFloat )Level;
+- (void)setStyleBeautyIntensity:(CGFloat )Intensityl;
 
 + (void)checkString:(NSString *)key completion:(void (^)(BOOL auth))completion;
 
 + (BOOL)checkString:(NSString *)key name:(NSString *)name;
+
+// Room Effect Parameters
+- (void)setFlipXFlipFlag:(BOOL)flag;
+- (void)setToonThreshold:(CGFloat)threshold;
+- (void)setSmoothToonThreshold:(CGFloat)threshold;
+- (void)setSmoothToonBlurRadius:(CGFloat)blurRadius;
+
 @end

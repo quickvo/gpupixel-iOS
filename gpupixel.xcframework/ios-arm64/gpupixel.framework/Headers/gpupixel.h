@@ -7,13 +7,14 @@
 
 #pragma once
 
-
 #if __has_include(<Foundation/Foundation.h>)
 #import <Foundation/Foundation.h>
 #endif
 
 #if __has_include(<gpupixel/RTCBeautyFilter.h>)
 #import <gpupixel/RTCBeautyFilter.h>
+#elif __has_include("iOS/Filter/Objc/RTCBeautyFilter.h")
+#import "iOS/Filter/Objc/RTCBeautyFilter.h"
 #endif
 
 #ifdef __cplusplus
@@ -48,6 +49,15 @@
 #include "gpupixel/filter/face_makeup_filter.h"
 #include "gpupixel/filter/face_reshape_filter.h"
 #include "gpupixel/filter/lipstick_filter.h"
+#include "gpupixel/filter/brow_filter.h"
+#include "gpupixel/filter/eyesline_filter.h"
+#include "gpupixel/filter/eyeslash_filter.h"
+#include "gpupixel/filter/eyespupil_filter.h"
+#include "gpupixel/filter/teeth_white_filter.h"
+#include "gpupixel/filter/small_murder_filter.h"
+#include "gpupixel/filter/eyeshadow_filter.h"
+#include "gpupixel/filter/chun_yu_filter.h"
+#include "gpupixel/filter/shenyan_filter.h"
 
 // general filters
 #include "gpupixel/filter/bilateral_filter.h"
@@ -112,15 +122,22 @@
 #include "gpupixel/filter/lookup_filter.h"
 #include "gpupixel/filter/sticker2d_effect_eyesmask.h"
 #include "gpupixel/filter/sticker2d_effect_Clown.h"
-#include "gpupixel/filter/sticker2d_effect_Bitie.h"
 #include "gpupixel/filter/glasses_filter.h"
 #include "gpupixel/filter/Test_filter.h"
 #include "gpupixel/filter/sticker2d_effect.h"
 #include "gpupixel/filter/effect_white_filter.h"
+// #include "gpupixel/filter/effect_text_filter.h"  // TODO: 待 EffectTextFilter 完善后再启用
 #include "gpupixel/filter/effect_sweet_filter.h"
 #include "gpupixel/filter/lookup_filter.h"
 #include "gpupixel/filter/lookup_two_filter.h"
 #include "gpupixel/filter/sticker2d_effect_face.h"
+#include "gpupixel/filter/pass_filter.h"
+#include "gpupixel/filter/eyes_shine_filter.h"
+#include "gpupixel/filter/eyesface_down_filter.h"
+#include "gpupixel/filter/christmas_filter.h"
+#include "gpupixel/filter/joker_filter.h"
+#include "gpupixel/filter/ya_guang_filter.h"
+#include "gpupixel/filter/blue_girl_filter.h"
 
 namespace gpupixel {
 
@@ -143,4 +160,4 @@ class GPUPIXEL_API GPUPixel {
 
 }  // namespace gpupixel
 
-#endif // __cplusplus
+#endif

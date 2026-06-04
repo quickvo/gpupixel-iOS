@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name gpupixel
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import Combine
 import Foundation
 import Swift
@@ -12,6 +12,24 @@ import _SwiftConcurrencyShims
 @_exported import gpupixel
 import os.lock
 import os
+public protocol RoomVideoFilterEnable {
+  var enable: Swift.Bool { get set }
+  func reset()
+  var event: Combine.AnyPublisher<gpupixel.RoomFilterEvent, Swift.Never> { get }
+}
+public protocol RoomFilterKeyType : Swift.CaseIterable {
+  var range: Swift.ClosedRange<Swift.Float> { get }
+  var initial: Swift.Float { get set }
+  func getValue() -> Swift.Float
+  func setValue(_ newValue: Swift.Float)
+}
+public struct BeautyStyleKey : Swift.Hashable {
+  public static func == (a: gpupixel.BeautyStyleKey, b: gpupixel.BeautyStyleKey) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public enum RoomFilterEvent {
   case faceChange
   case styleChange
@@ -20,18 +38,10 @@ public enum RoomFilterEvent {
   case qualityChange
   case stikerChange
   case beautyChange
-  public static func == (a: gpupixel.RoomFilterEvent, b: gpupixel.RoomFilterEvent) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
+  case styleBeautyChange
+  case effectParamChange(gpupixel.RoomEffectParamKey)
 }
 final public class RoomVideoFilterConfig {
-  final public var enable: Swift.Bool {
-    get
-  }
-  final public func clear()
-  final public func reset()
   final public var face: gpupixel.RoomFaceFilter {
     get
   }
@@ -50,18 +60,33 @@ final public class RoomVideoFilterConfig {
   final public var stiker: gpupixel.RoomStickerFilter {
     get
   }
+  final public var beauty: gpupixel.RoomBeautyFilter {
+    get
+  }
+  final public var styleBeauty: gpupixel.RoomStyleBeautyFilter {
+    get
+  }
+  final public var enable: Swift.Bool {
+    get
+  }
+  final public func clear()
+  final public func reset()
   public init()
   final public let virtualSub: Combine.PassthroughSubject<gpupixel.RoomFilterEvent, Swift.Never>
   @objc deinit
 }
-@_hasMissingDesignatedInitializers final public class RoomFaceFilter {
+@_hasMissingDesignatedInitializers final public class RoomFaceFilter : gpupixel.RoomVideoFilterEnable {
+  final public var event: Combine.AnyPublisher<gpupixel.RoomFilterEvent, Swift.Never> {
+    get
+  }
   final public var enable: Swift.Bool {
     get
     set
   }
-  public enum Key : Swift.CaseIterable {
-    case buffing, white, thin, eye, lipstick, blusher, sharpen, ruddy
+  public enum Key : gpupixel.RoomFilterKeyType, Swift.CaseIterable {
+    case buffing, white, thin, eye, sharpen, ruddy
     case thinNose, thinChin, faceShave, adjustMouth, nosePosition, eyesDistance
+    case whitenTeeth
     public var range: Swift.ClosedRange<Swift.Float> {
       get
     }
@@ -69,6 +94,8 @@ final public class RoomVideoFilterConfig {
       get
       set
     }
+    public func getValue() -> Swift.Float
+    public func setValue(_ newValue: Swift.Float)
     public static func == (a: gpupixel.RoomFaceFilter.Key, b: gpupixel.RoomFaceFilter.Key) -> Swift.Bool
     public typealias AllCases = [gpupixel.RoomFaceFilter.Key]
     nonisolated public static var allCases: [gpupixel.RoomFaceFilter.Key] {
@@ -112,7 +139,7 @@ public enum RoomStyleFilterCase : Swift.Int, Swift.Sendable, Swift.CaseIterable 
     get
   }
 }
-extension gpupixel.RoomStyleFilterCase {
+extension gpupixel.RoomStyleFilterCase : gpupixel.RoomFilterKeyType {
   public var range: Swift.ClosedRange<Swift.Float> {
     get
   }
@@ -120,8 +147,13 @@ extension gpupixel.RoomStyleFilterCase {
     get
     set
   }
+  public func getValue() -> Swift.Float
+  public func setValue(_ newValue: Swift.Float)
 }
-@_hasMissingDesignatedInitializers public class RoomStyleFilter {
+@_hasMissingDesignatedInitializers public class RoomStyleFilter : gpupixel.RoomVideoFilterEnable {
+  public var event: Combine.AnyPublisher<gpupixel.RoomFilterEvent, Swift.Never> {
+    get
+  }
   public var value: gpupixel.RoomStyleFilterCase {
     get
     set
@@ -142,7 +174,10 @@ public enum RoomVirtualBackgroundConfig : Swift.Sendable {
   case img(UIKit.UIImage?)
   case blur
 }
-@_hasMissingDesignatedInitializers public class RoomVirtualBackFilter {
+@_hasMissingDesignatedInitializers public class RoomVirtualBackFilter : gpupixel.RoomVideoFilterEnable {
+  public var event: Combine.AnyPublisher<gpupixel.RoomFilterEvent, Swift.Never> {
+    get
+  }
   public var enable: Swift.Bool {
     get
     set
@@ -186,7 +221,36 @@ public enum RoomEffectFilterCase : Swift.Int, Swift.Sendable, Swift.CaseIterable
     get
   }
 }
-@_hasMissingDesignatedInitializers public class RoomEffectFilter {
+public enum RoomEffectParamKey : Swift.String, Swift.CaseIterable {
+  case flipFlag
+  case threshold
+  case toonThreshold
+  case blurRadius
+  public var range: Swift.ClosedRange<Swift.Float> {
+    get
+  }
+  public var defaultValue: Swift.Float {
+    get
+  }
+  public var supportedCases: [gpupixel.RoomEffectFilterCase] {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [gpupixel.RoomEffectParamKey]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [gpupixel.RoomEffectParamKey] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class RoomEffectFilter : gpupixel.RoomVideoFilterEnable {
+  public var event: Combine.AnyPublisher<gpupixel.RoomFilterEvent, Swift.Never> {
+    get
+  }
   public var enable: Swift.Bool {
     get
     set
@@ -195,15 +259,20 @@ public enum RoomEffectFilterCase : Swift.Int, Swift.Sendable, Swift.CaseIterable
     get
     set
   }
+  public func setParam(key: gpupixel.RoomEffectParamKey, value: Swift.Float)
+  public func getParam(key: gpupixel.RoomEffectParamKey) -> Swift.Float
   public func reset()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers final public class RoomQulityFilter {
+@_hasMissingDesignatedInitializers final public class RoomQulityFilter : gpupixel.RoomVideoFilterEnable {
+  final public var event: Combine.AnyPublisher<gpupixel.RoomFilterEvent, Swift.Never> {
+    get
+  }
   final public var enable: Swift.Bool {
     get
     set
   }
-  public enum Key {
+  public enum Key : gpupixel.RoomFilterKeyType {
     case temperature, hue, exposure, saturation, contrast
     case brightness, shadow, highlights, vignette
     public var range: Swift.ClosedRange<Swift.Float> {
@@ -213,6 +282,8 @@ public enum RoomEffectFilterCase : Swift.Int, Swift.Sendable, Swift.CaseIterable
       get
       set
     }
+    public func getValue() -> Swift.Float
+    public func setValue(_ newValue: Swift.Float)
     public static func == (a: gpupixel.RoomQulityFilter.Key, b: gpupixel.RoomQulityFilter.Key) -> Swift.Bool
     public typealias AllCases = [gpupixel.RoomQulityFilter.Key]
     nonisolated public static var allCases: [gpupixel.RoomQulityFilter.Key] {
@@ -234,7 +305,10 @@ public enum RoomStickerFilterCase : Swift.Sendable {
   case none
   case path(path: Swift.String)
 }
-@_hasMissingDesignatedInitializers public class RoomStickerFilter {
+@_hasMissingDesignatedInitializers public class RoomStickerFilter : gpupixel.RoomVideoFilterEnable {
+  public var event: Combine.AnyPublisher<gpupixel.RoomFilterEvent, Swift.Never> {
+    get
+  }
   public var enable: Swift.Bool {
     get
     set
@@ -246,14 +320,92 @@ public enum RoomStickerFilterCase : Swift.Sendable {
   public func reset()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers final public class RoomBeautyFilter {
+public enum RoomStyleBeautyCase : Swift.Int, Swift.Sendable, Swift.CaseIterable {
+  case none, sweet, temperament, fairSkinned, flicker, paleColored, smokyEyes, Charm
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias AllCases = [gpupixel.RoomStyleBeautyCase]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [gpupixel.RoomStyleBeautyCase] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum RoomStyleBeautyValueKey : Swift.Sendable, Swift.CaseIterable {
+  case value
+  case filter
+  public static func == (a: gpupixel.RoomStyleBeautyValueKey, b: gpupixel.RoomStyleBeautyValueKey) -> Swift.Bool
+  public typealias AllCases = [gpupixel.RoomStyleBeautyValueKey]
+  nonisolated public static var allCases: [gpupixel.RoomStyleBeautyValueKey] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension gpupixel.RoomStyleBeautyCase {
+  public var range: Swift.ClosedRange<Swift.Float> {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class RoomStyleBeautyFilter : gpupixel.RoomVideoFilterEnable {
+  final public var event: Combine.AnyPublisher<gpupixel.RoomFilterEvent, Swift.Never> {
+    get
+  }
+  final public var value: gpupixel.RoomStyleBeautyCase {
+    get
+    set
+  }
   final public var enable: Swift.Bool {
     get
     set
   }
+  final public subscript(key: gpupixel.RoomStyleBeautyCase, valueKey: gpupixel.RoomStyleBeautyValueKey) -> Swift.Float {
+    get
+    set
+  }
   final public func reset()
-  public enum Key : Swift.CaseIterable {
-    case sweet, white
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class RoomBeautyFilter : gpupixel.RoomVideoFilterEnable {
+  final public var event: Combine.AnyPublisher<gpupixel.RoomFilterEvent, Swift.Never> {
+    get
+  }
+  final public var enable: Swift.Bool {
+    get
+    set
+  }
+  final public func currentStyleInt(for category: gpupixel.RoomBeautyFilter.Key) -> Swift.Int
+  final public var browStyle: gpupixel.BeautyBrowStyle {
+    get
+    set
+  }
+  final public var eyeLinesStyle: gpupixel.BeautyEyelinesStyle {
+    get
+    set
+  }
+  final public var eyeShadowStyle: gpupixel.BeautyEyeshadowStyle {
+    get
+    set
+  }
+  final public var lashStyle: gpupixel.BeautyLashStyle {
+    get
+    set
+  }
+  final public var lipstickStyle: gpupixel.BeautyLipstickStyle {
+    get
+    set
+  }
+  final public var blushStyle: gpupixel.BeautyBlushStyle {
+    get
+    set
+  }
+  public enum Key : Swift.Int, gpupixel.RoomFilterKeyType, Swift.CaseIterable {
+    case lipstick, blush, eyeLines, eyeShadow, lash, brow
     public var range: Swift.ClosedRange<Swift.Float> {
       get
     }
@@ -261,13 +413,17 @@ public enum RoomStickerFilterCase : Swift.Sendable {
       get
       set
     }
-    public static func == (a: gpupixel.RoomBeautyFilter.Key, b: gpupixel.RoomBeautyFilter.Key) -> Swift.Bool
+    public func getValue() -> Swift.Float
+    public func setValue(_ newValue: Swift.Float)
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
     public typealias AllCases = [gpupixel.RoomBeautyFilter.Key]
+    public typealias RawValue = Swift.Int
     nonisolated public static var allCases: [gpupixel.RoomBeautyFilter.Key] {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
+    public var rawValue: Swift.Int {
       get
     }
   }
@@ -275,7 +431,126 @@ public enum RoomStickerFilterCase : Swift.Sendable {
     get
     set
   }
+  final public func reset()
   @objc deinit
+}
+public enum BeautyBrowStyle : Swift.Int, Swift.Sendable, Swift.CaseIterable {
+  case none
+  case natural
+  case thickFlat
+  case downTail
+  case distant
+  case sword
+  case feather
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias AllCases = [gpupixel.BeautyBrowStyle]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [gpupixel.BeautyBrowStyle] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum BeautyEyelinesStyle : Swift.Int, Swift.Sendable, Swift.CaseIterable {
+  case none
+  case natural
+  case playful
+  case sly
+  case elegant
+  case wild
+  case shadowplume
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias AllCases = [gpupixel.BeautyEyelinesStyle]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [gpupixel.BeautyEyelinesStyle] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum BeautyEyeshadowStyle : Swift.Int, Swift.Sendable, Swift.CaseIterable {
+  case none
+  case mistPink
+  case mochaBrown
+  case glowHoney
+  case warmTea
+  case energyOrange
+  case violet
+  case delicateRose
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias AllCases = [gpupixel.BeautyEyeshadowStyle]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [gpupixel.BeautyEyeshadowStyle] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum BeautyLashStyle : Swift.Int, Swift.Sendable, Swift.CaseIterable {
+  case none
+  case natural
+  case gentle
+  case curled
+  case long
+  case dense
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias AllCases = [gpupixel.BeautyLashStyle]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [gpupixel.BeautyLashStyle] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum BeautyLipstickStyle : Swift.Int, Swift.Sendable, Swift.CaseIterable {
+  case none
+  case roseBean
+  case coral
+  case velvetRed
+  case sweetOrange
+  case rustRed
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias AllCases = [gpupixel.BeautyLipstickStyle]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [gpupixel.BeautyLipstickStyle] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum BeautyBlushStyle : Swift.Int, Swift.Sendable, Swift.CaseIterable {
+  case none
+  case apricotPink
+  case milkOrange
+  case peach
+  case tipsy
+  case sweetOrange
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias AllCases = [gpupixel.BeautyBlushStyle]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [gpupixel.BeautyBlushStyle] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers final public class FilterEngine {
   public static let engine: gpupixel.FilterEngine
@@ -285,11 +560,18 @@ public enum RoomStickerFilterCase : Swift.Sendable {
   final public var filter: gpupixel.RoomVideoFilterConfig {
     get
   }
+  final public var filterHandle: gpupixel.FiterHandle {
+    get
+  }
   @objc deinit
 }
 extension gpupixel.FilterEngine {
   @discardableResult
   public static func create(key: Swift.String) async -> Swift.Bool
+}
+public struct RoomEffectFilterDefault {
+  public static var shared: gpupixel.RoomEffectFilterDefault
+  public init()
 }
 public enum FilterVideoRotation : Swift.Int {
   case rotation0
@@ -313,11 +595,79 @@ extension gpupixel.FiterHandle {
   #if compiler(>=5.3) && $NonescapableTypes
   final public func process(buffer: CoreVideo.CVPixelBuffer, rotaion: gpupixel.FilterVideoRotation? = .rotation0)
   #endif
+  final public func warmup()
 }
 extension gpupixel.FiterHandle : gpupixel.RTCBeautyFilterDelegate {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func didReceive(_ pixelBuffer: CoreVideo.CVPixelBuffer!, width: Swift.Int32, height: Swift.Int32)
   #endif
+}
+public actor DownloadManager {
+  public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func startDownload(id: Swift.String, url: Foundation.URL) -> Combine.AnyPublisher<gpupixel.DownloadEvent, Swift.Never>?
+  #endif
+  public func cancelDownload(id: Swift.String)
+  public func cancelAllDownloads()
+  public func isDownloading(id: Swift.String) -> Swift.Bool
+  public func downloadCount() -> Swift.Int
+  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
+    get
+  }
+}
+public struct DownloadProgress : Swift.Sendable {
+  public let id: Swift.String
+  public let fractionCompleted: Swift.Double
+  public let bytesReceived: Swift.Int64
+  public let totalBytes: Swift.Int64
+  public init(id: Swift.String, fractionCompleted: Swift.Double, bytesReceived: Swift.Int64, totalBytes: Swift.Int64)
+}
+public enum DownloadResult : Swift.Sendable {
+  case completed(localPath: Swift.String)
+  case failed(any Swift.Error)
+  case cancelled
+}
+public enum DownloadEvent : Swift.Sendable {
+  case progress(gpupixel.DownloadProgress)
+  case result(gpupixel.DownloadResult)
+}
+public enum DownloadStatus : Swift.Equatable, Swift.Sendable {
+  case downloading
+  case completed
+  case failed(message: Swift.String)
+  case cancelled
+  public static func == (a: gpupixel.DownloadStatus, b: gpupixel.DownloadStatus) -> Swift.Bool
+}
+public struct DownloadState : Swift.Equatable, Swift.Sendable {
+  public let id: Swift.String
+  public let progress: Swift.Double
+  public let status: gpupixel.DownloadStatus
+  public init(id: Swift.String, progress: Swift.Double, status: gpupixel.DownloadStatus)
+  public static func == (a: gpupixel.DownloadState, b: gpupixel.DownloadState) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers final public class DownloadOperation : @unchecked Swift.Sendable {
+  final public let id: Swift.String
+  final public let url: Foundation.URL
+  final public let subject: Combine.PassthroughSubject<gpupixel.DownloadEvent, Swift.Never>
+  final public func start()
+  final public func cancel()
+  @objc deinit
+}
+public struct StikerListResponse : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct StikerResults : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct StikerRemoteMaterial : Swift.Decodable, Swift.Hashable {
+  public static func == (a: gpupixel.StikerRemoteMaterial, b: gpupixel.StikerRemoteMaterial) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct CachedBeautyMaterial : Swift.Codable, Swift.Equatable {
   public struct OriginalAssetState : Swift.Codable, Swift.Equatable {
@@ -351,6 +701,23 @@ public enum OriginalAssetStatus : Swift.String, Swift.Codable {
     get
   }
 }
+extension gpupixel.CachedBeautyMaterial {
+  public init(remote: gpupixel.StikerRemoteMaterial)
+}
+public enum StikerNetworkError : Swift.Error {
+  case invalidURL
+  case invalidResponse
+  case httpStatus(Swift.Int)
+  case serverMessage(Swift.String)
+  case decoding(any Swift.Error)
+  case requestFailed(any Swift.Error)
+  case noAuth
+}
+final public class StikerNetworkService {
+  public init(session: Foundation.URLSession = .shared)
+  final public func fetchStikerList() async throws -> [gpupixel.StikerRemoteMaterial]
+  @objc deinit
+}
 public enum StikerRepositoryError : Swift.Error {
   case downloadStatus(Swift.Int?)
   case materialNotFound
@@ -363,6 +730,12 @@ final public class StikerRepository : Foundation.ObservableObject {
   final public var $materials: Combine.Published<[gpupixel.CachedBeautyMaterial]>.Publisher {
     get
   }
+  @Combine.Published @_projectedValueProperty($downloadStates) final public var downloadStates: [Swift.String : gpupixel.DownloadState] {
+    get
+  }
+  final public var $downloadStates: Combine.Published<[Swift.String : gpupixel.DownloadState]>.Publisher {
+    get
+  }
   public init() throws
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
@@ -372,15 +745,35 @@ extension gpupixel.StikerRepository {
     get
   }
   final public func refreshMaterials() async
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func downloadWithProgress(id: Swift.String) async -> Combine.AnyPublisher<gpupixel.DownloadEvent, Swift.Never>?
+  #endif
+  final public func download(id: Swift.String, progress: @escaping (Swift.Double) -> Swift.Void) async throws
   final public func download(id: Swift.String) async throws
+  final public func cancelDownload(id: Swift.String) async
+  final public func cancelAllDownloads() async
 }
 public enum StikerStorageError : Swift.Error {
   case cacheDirectoryUnavailable
   case moveFailed(any Swift.Error)
   case persistFailed(any Swift.Error)
 }
-extension gpupixel.RoomFilterEvent : Swift.Equatable {}
-extension gpupixel.RoomFilterEvent : Swift.Hashable {}
+public actor StikerAssetStorage {
+  public init(fileManager: Foundation.FileManager = .default) throws
+  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
+    get
+  }
+}
+extension gpupixel.StikerAssetStorage {
+  public func loadMaterials() -> [gpupixel.CachedBeautyMaterial]
+  public func saveMaterials(_ materials: [gpupixel.CachedBeautyMaterial]) throws
+  public func downloadedFile(temporaryURL: Foundation.URL, originalURL: Foundation.URL, name: Swift.String) throws -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func existingLocalPath(for originalURL: Foundation.URL, name: Swift.String) -> Swift.String?
+  #endif
+}
 extension gpupixel.RoomFaceFilter.Key : Swift.Equatable {}
 extension gpupixel.RoomFaceFilter.Key : Swift.Hashable {}
 extension gpupixel.RoomStyleFilterCase : Swift.Equatable {}
@@ -389,11 +782,37 @@ extension gpupixel.RoomStyleFilterCase : Swift.RawRepresentable {}
 extension gpupixel.RoomEffectFilterCase : Swift.Equatable {}
 extension gpupixel.RoomEffectFilterCase : Swift.Hashable {}
 extension gpupixel.RoomEffectFilterCase : Swift.RawRepresentable {}
-extension gpupixel.RoomQulityFilter.Key : Swift.CaseIterable {}
+extension gpupixel.RoomEffectParamKey : Swift.Equatable {}
+extension gpupixel.RoomEffectParamKey : Swift.Hashable {}
+extension gpupixel.RoomEffectParamKey : Swift.RawRepresentable {}
 extension gpupixel.RoomQulityFilter.Key : Swift.Equatable {}
 extension gpupixel.RoomQulityFilter.Key : Swift.Hashable {}
+extension gpupixel.RoomStyleBeautyCase : Swift.Equatable {}
+extension gpupixel.RoomStyleBeautyCase : Swift.Hashable {}
+extension gpupixel.RoomStyleBeautyCase : Swift.RawRepresentable {}
+extension gpupixel.RoomStyleBeautyValueKey : Swift.Equatable {}
+extension gpupixel.RoomStyleBeautyValueKey : Swift.Hashable {}
 extension gpupixel.RoomBeautyFilter.Key : Swift.Equatable {}
 extension gpupixel.RoomBeautyFilter.Key : Swift.Hashable {}
+extension gpupixel.RoomBeautyFilter.Key : Swift.RawRepresentable {}
+extension gpupixel.BeautyBrowStyle : Swift.Equatable {}
+extension gpupixel.BeautyBrowStyle : Swift.Hashable {}
+extension gpupixel.BeautyBrowStyle : Swift.RawRepresentable {}
+extension gpupixel.BeautyEyelinesStyle : Swift.Equatable {}
+extension gpupixel.BeautyEyelinesStyle : Swift.Hashable {}
+extension gpupixel.BeautyEyelinesStyle : Swift.RawRepresentable {}
+extension gpupixel.BeautyEyeshadowStyle : Swift.Equatable {}
+extension gpupixel.BeautyEyeshadowStyle : Swift.Hashable {}
+extension gpupixel.BeautyEyeshadowStyle : Swift.RawRepresentable {}
+extension gpupixel.BeautyLashStyle : Swift.Equatable {}
+extension gpupixel.BeautyLashStyle : Swift.Hashable {}
+extension gpupixel.BeautyLashStyle : Swift.RawRepresentable {}
+extension gpupixel.BeautyLipstickStyle : Swift.Equatable {}
+extension gpupixel.BeautyLipstickStyle : Swift.Hashable {}
+extension gpupixel.BeautyLipstickStyle : Swift.RawRepresentable {}
+extension gpupixel.BeautyBlushStyle : Swift.Equatable {}
+extension gpupixel.BeautyBlushStyle : Swift.Hashable {}
+extension gpupixel.BeautyBlushStyle : Swift.RawRepresentable {}
 extension gpupixel.FilterVideoRotation : Swift.Equatable {}
 extension gpupixel.FilterVideoRotation : Swift.Hashable {}
 extension gpupixel.FilterVideoRotation : Swift.RawRepresentable {}
