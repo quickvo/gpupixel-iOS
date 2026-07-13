@@ -11,10 +11,12 @@
 #import <Foundation/Foundation.h>
 #endif
 
+#if defined(__APPLE__)
 #if __has_include(<gpupixel/RTCBeautyFilter.h>)
 #import <gpupixel/RTCBeautyFilter.h>
 #elif __has_include("iOS/Filter/Objc/RTCBeautyFilter.h")
 #import "iOS/Filter/Objc/RTCBeautyFilter.h"
+#endif
 #endif
 
 #ifdef __cplusplus
@@ -120,24 +122,20 @@
 #include "gpupixel/filter/highlight_shadow_filter.h"
 #include "gpupixel/filter/vignette_filter.h"
 #include "gpupixel/filter/lookup_filter.h"
-#include "gpupixel/filter/sticker2d_effect_eyesmask.h"
-#include "gpupixel/filter/sticker2d_effect_Clown.h"
 #include "gpupixel/filter/glasses_filter.h"
-#include "gpupixel/filter/Test_filter.h"
+#include "gpupixel/filter/transform_filter.h"
 #include "gpupixel/filter/sticker2d_effect.h"
 #include "gpupixel/filter/effect_white_filter.h"
 // #include "gpupixel/filter/effect_text_filter.h"  // TODO: 待 EffectTextFilter 完善后再启用
 #include "gpupixel/filter/effect_sweet_filter.h"
 #include "gpupixel/filter/lookup_filter.h"
-#include "gpupixel/filter/lookup_two_filter.h"
-#include "gpupixel/filter/sticker2d_effect_face.h"
 #include "gpupixel/filter/pass_filter.h"
 #include "gpupixel/filter/eyes_shine_filter.h"
 #include "gpupixel/filter/eyesface_down_filter.h"
 #include "gpupixel/filter/christmas_filter.h"
 #include "gpupixel/filter/joker_filter.h"
 #include "gpupixel/filter/ya_guang_filter.h"
-#include "gpupixel/filter/blue_girl_filter.h"
+//#include "gpupixel/filter/blue_girl_filter.h"
 
 namespace gpupixel {
 
