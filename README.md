@@ -40,10 +40,28 @@
 
 ### Swift Package Manager（推荐）
 
-在 Xcode 中 `File → Add Package Dependencies… → Add Local…`，选择本仓库根目录（包含 `Package.swift`）即可；或在你的 `Package.swift` 中通过本地路径引用：
+在 Xcode 中 `File → Add Package Dependencies…`，在搜索框填入仓库地址：
+
+```
+https://github.com/quickvo/gpupixel-iOS.git
+```
+
+选择版本规则（如 `Up to Next Major Version` 从 `1.0.0` 起）后添加即可。
+
+或在你的 `Package.swift` 中声明依赖：
 
 ```swift
-.package(path: "path/to/gpupixel-iOS")
+dependencies: [
+    .package(url: "https://github.com/quickvo/gpupixel-iOS.git", from: "1.0.0")
+],
+targets: [
+    .target(
+        name: "YourApp",
+        dependencies: [
+            .product(name: "gpupixel", package: "gpupixel-iOS")
+        ]
+    )
+]
 ```
 
 ### 手动集成
