@@ -2825,17 +2825,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
                 "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               },
               {
                 "kind": "Conformance",
@@ -5045,13 +5045,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -5122,6 +5115,13 @@
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           }
         ]
       },
@@ -5166,6 +5166,46 @@
             "usr": "s:8gpupixel18RoomEffectParamKeyO8flipFlagyA2CmF",
             "mangledName": "$s8gpupixel18RoomEffectParamKeyO8flipFlagyA2CmF",
             "moduleName": "gpupixel"
+          },
+          {
+            "kind": "Var",
+            "name": "flipYFlag",
+            "printedName": "flipYFlag",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(gpupixel.RoomEffectParamKey.Type) -> gpupixel.RoomEffectParamKey",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectParamKey",
+                    "printedName": "gpupixel.RoomEffectParamKey",
+                    "usr": "s:8gpupixel18RoomEffectParamKeyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "gpupixel.RoomEffectParamKey.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectParamKey",
+                        "printedName": "gpupixel.RoomEffectParamKey",
+                        "usr": "s:8gpupixel18RoomEffectParamKeyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8gpupixel18RoomEffectParamKeyO9flipYFlagyA2CmF",
+            "mangledName": "$s8gpupixel18RoomEffectParamKeyO9flipYFlagyA2CmF",
+            "moduleName": "gpupixel",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -5603,17 +5643,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -6939,17 +6979,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
                 "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               },
               {
                 "kind": "Conformance",
@@ -7549,6 +7589,54 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "apply",
+            "printedName": "apply(path:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8gpupixel17RoomStickerFilterC5apply4pathySS_tF",
+            "mangledName": "$s8gpupixel17RoomStickerFilterC5apply4pathySS_tF",
+            "moduleName": "gpupixel",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearSticker",
+            "printedName": "clearSticker()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8gpupixel17RoomStickerFilterC05clearC0yyF",
+            "mangledName": "$s8gpupixel17RoomStickerFilterC05clearC0yyF",
+            "moduleName": "gpupixel",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -8870,17 +8958,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -9457,13 +9545,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -9534,6 +9615,13 @@
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           }
         ]
       },
@@ -9790,17 +9878,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -11659,17 +11747,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
                 "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               },
               {
                 "kind": "Conformance",
@@ -12346,13 +12434,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -12423,6 +12504,13 @@
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           }
         ]
       },
@@ -12863,13 +12951,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -12940,6 +13021,13 @@
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           }
         ]
       },
@@ -13420,13 +13508,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -13497,6 +13578,13 @@
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           }
         ]
       },
@@ -13897,13 +13985,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -13974,6 +14055,13 @@
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           }
         ]
       },
@@ -14374,13 +14462,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -14451,6 +14532,13 @@
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           }
         ]
       },
@@ -14851,13 +14939,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -14928,6 +15009,13 @@
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           }
         ]
       },
@@ -15567,6 +15655,153 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "authReason",
+            "printedName": "authReason",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AuthReason",
+                "printedName": "gpupixel.AuthReason",
+                "usr": "s:8gpupixel10AuthReasonO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8gpupixel12FilterEngineC10authReasonAA04AuthE0OvpZ",
+            "mangledName": "$s8gpupixel12FilterEngineC10authReasonAA04AuthE0OvpZ",
+            "moduleName": "gpupixel",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthReason",
+                    "printedName": "gpupixel.AuthReason",
+                    "usr": "s:8gpupixel10AuthReasonO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8gpupixel12FilterEngineC10authReasonAA04AuthE0OvgZ",
+                "mangledName": "$s8gpupixel12FilterEngineC10authReasonAA04AuthE0OvgZ",
+                "moduleName": "gpupixel",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "authReasonPublisher",
+            "printedName": "authReasonPublisher",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<gpupixel.AuthReason, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthReason",
+                    "printedName": "gpupixel.AuthReason",
+                    "usr": "s:8gpupixel10AuthReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8gpupixel12FilterEngineC19authReasonPublisher7Combine03AnyF0VyAA04AuthE0Os5NeverOGvpZ",
+            "mangledName": "$s8gpupixel12FilterEngineC19authReasonPublisher7Combine03AnyF0VyAA04AuthE0Os5NeverOGvpZ",
+            "moduleName": "gpupixel",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<gpupixel.AuthReason, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthReason",
+                        "printedName": "gpupixel.AuthReason",
+                        "usr": "s:8gpupixel10AuthReasonO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8gpupixel12FilterEngineC19authReasonPublisher7Combine03AnyF0VyAA04AuthE0Os5NeverOGvgZ",
+                "mangledName": "$s8gpupixel12FilterEngineC19authReasonPublisher7Combine03AnyF0VyAA04AuthE0Os5NeverOGvgZ",
+                "moduleName": "gpupixel",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "recheckNow",
+            "printedName": "recheckNow()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8gpupixel12FilterEngineC10recheckNowyyFZ",
+            "mangledName": "$s8gpupixel12FilterEngineC10recheckNowyyFZ",
+            "moduleName": "gpupixel",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Function",
             "name": "isModuleAuthorized",
             "printedName": "isModuleAuthorized(_:)",
@@ -15982,6 +16217,309 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AuthReason",
+        "printedName": "AuthReason",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "authorized",
+            "printedName": "authorized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(gpupixel.AuthReason.Type) -> gpupixel.AuthReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthReason",
+                    "printedName": "gpupixel.AuthReason",
+                    "usr": "s:8gpupixel10AuthReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "gpupixel.AuthReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthReason",
+                        "printedName": "gpupixel.AuthReason",
+                        "usr": "s:8gpupixel10AuthReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8gpupixel10AuthReasonO10authorizedyA2CmF",
+            "mangledName": "$s8gpupixel10AuthReasonO10authorizedyA2CmF",
+            "moduleName": "gpupixel"
+          },
+          {
+            "kind": "Var",
+            "name": "networkGracePending",
+            "printedName": "networkGracePending",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(gpupixel.AuthReason.Type) -> gpupixel.AuthReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthReason",
+                    "printedName": "gpupixel.AuthReason",
+                    "usr": "s:8gpupixel10AuthReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "gpupixel.AuthReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthReason",
+                        "printedName": "gpupixel.AuthReason",
+                        "usr": "s:8gpupixel10AuthReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8gpupixel10AuthReasonO19networkGracePendingyA2CmF",
+            "mangledName": "$s8gpupixel10AuthReasonO19networkGracePendingyA2CmF",
+            "moduleName": "gpupixel"
+          },
+          {
+            "kind": "Var",
+            "name": "networkGraceExpired",
+            "printedName": "networkGraceExpired",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(gpupixel.AuthReason.Type) -> gpupixel.AuthReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthReason",
+                    "printedName": "gpupixel.AuthReason",
+                    "usr": "s:8gpupixel10AuthReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "gpupixel.AuthReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthReason",
+                        "printedName": "gpupixel.AuthReason",
+                        "usr": "s:8gpupixel10AuthReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8gpupixel10AuthReasonO19networkGraceExpiredyA2CmF",
+            "mangledName": "$s8gpupixel10AuthReasonO19networkGraceExpiredyA2CmF",
+            "moduleName": "gpupixel"
+          },
+          {
+            "kind": "Var",
+            "name": "serverDenied",
+            "printedName": "serverDenied",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(gpupixel.AuthReason.Type) -> gpupixel.AuthReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthReason",
+                    "printedName": "gpupixel.AuthReason",
+                    "usr": "s:8gpupixel10AuthReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "gpupixel.AuthReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthReason",
+                        "printedName": "gpupixel.AuthReason",
+                        "usr": "s:8gpupixel10AuthReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8gpupixel10AuthReasonO12serverDeniedyA2CmF",
+            "mangledName": "$s8gpupixel10AuthReasonO12serverDeniedyA2CmF",
+            "moduleName": "gpupixel"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8gpupixel10AuthReasonO9hashValueSivp",
+            "mangledName": "$s8gpupixel10AuthReasonO9hashValueSivp",
+            "moduleName": "gpupixel",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8gpupixel10AuthReasonO9hashValueSivg",
+                "mangledName": "$s8gpupixel10AuthReasonO9hashValueSivg",
+                "moduleName": "gpupixel",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8gpupixel10AuthReasonO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s8gpupixel10AuthReasonO4hash4intoys6HasherVz_tF",
+            "moduleName": "gpupixel",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AuthReason",
+                "printedName": "gpupixel.AuthReason",
+                "usr": "s:8gpupixel10AuthReasonO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AuthReason",
+                "printedName": "gpupixel.AuthReason",
+                "usr": "s:8gpupixel10AuthReasonO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8gpupixel10AuthReasonO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s8gpupixel10AuthReasonO2eeoiySbAC_ACtFZ",
+            "moduleName": "gpupixel",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8gpupixel10AuthReasonO",
+        "mangledName": "$s8gpupixel10AuthReasonO",
+        "moduleName": "gpupixel",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -16445,13 +16983,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -16522,6 +17053,13 @@
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           }
         ]
       },
@@ -16959,17 +17497,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -17060,7 +17598,8 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -17193,6 +17732,202 @@
                 "declKind": "Accessor",
                 "usr": "s:8gpupixel11FiterHandleC12handleBufferySo11CVBufferRefa_AA19FilterVideoRotationOt_tcSgvM",
                 "mangledName": "$s8gpupixel11FiterHandleC12handleBufferySo11CVBufferRefa_AA19FilterVideoRotationOt_tcSgvM",
+                "moduleName": "gpupixel",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "handleLocalBuffer",
+            "printedName": "handleLocalBuffer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(((CoreVideo.CVBuffer, gpupixel.FilterVideoRotation)) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "((CoreVideo.CVBuffer, gpupixel.FilterVideoRotation)) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(CoreVideo.CVBuffer, gpupixel.FilterVideoRotation)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CVBuffer",
+                            "printedName": "CoreVideo.CVBuffer",
+                            "usr": "c:@T@CVBufferRef"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FilterVideoRotation",
+                            "printedName": "gpupixel.FilterVideoRotation",
+                            "usr": "s:8gpupixel19FilterVideoRotationO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8gpupixel11FiterHandleC17handleLocalBufferySo11CVBufferRefa_AA19FilterVideoRotationOt_tcSgvp",
+            "mangledName": "$s8gpupixel11FiterHandleC17handleLocalBufferySo11CVBufferRefa_AA19FilterVideoRotationOt_tcSgvp",
+            "moduleName": "gpupixel",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(((CoreVideo.CVBuffer, gpupixel.FilterVideoRotation)) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "((CoreVideo.CVBuffer, gpupixel.FilterVideoRotation)) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(CoreVideo.CVBuffer, gpupixel.FilterVideoRotation)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CVBuffer",
+                                "printedName": "CoreVideo.CVBuffer",
+                                "usr": "c:@T@CVBufferRef"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "FilterVideoRotation",
+                                "printedName": "gpupixel.FilterVideoRotation",
+                                "usr": "s:8gpupixel19FilterVideoRotationO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8gpupixel11FiterHandleC17handleLocalBufferySo11CVBufferRefa_AA19FilterVideoRotationOt_tcSgvg",
+                "mangledName": "$s8gpupixel11FiterHandleC17handleLocalBufferySo11CVBufferRefa_AA19FilterVideoRotationOt_tcSgvg",
+                "moduleName": "gpupixel",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(((CoreVideo.CVBuffer, gpupixel.FilterVideoRotation)) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "((CoreVideo.CVBuffer, gpupixel.FilterVideoRotation)) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(CoreVideo.CVBuffer, gpupixel.FilterVideoRotation)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CVBuffer",
+                                "printedName": "CoreVideo.CVBuffer",
+                                "usr": "c:@T@CVBufferRef"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "FilterVideoRotation",
+                                "printedName": "gpupixel.FilterVideoRotation",
+                                "usr": "s:8gpupixel19FilterVideoRotationO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8gpupixel11FiterHandleC17handleLocalBufferySo11CVBufferRefa_AA19FilterVideoRotationOt_tcSgvs",
+                "mangledName": "$s8gpupixel11FiterHandleC17handleLocalBufferySo11CVBufferRefa_AA19FilterVideoRotationOt_tcSgvs",
+                "moduleName": "gpupixel",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8gpupixel11FiterHandleC17handleLocalBufferySo11CVBufferRefa_AA19FilterVideoRotationOt_tcSgvM",
+                "mangledName": "$s8gpupixel11FiterHandleC17handleLocalBufferySo11CVBufferRefa_AA19FilterVideoRotationOt_tcSgvM",
                 "moduleName": "gpupixel",
                 "implicit": true,
                 "declAttributes": [
@@ -17475,6 +18210,64 @@
           },
           {
             "kind": "Function",
+            "name": "setStickerDualPresent",
+            "printedName": "setStickerDualPresent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8gpupixel11FiterHandleC21setStickerDualPresentyySbF",
+            "mangledName": "$s8gpupixel11FiterHandleC21setStickerDualPresentyySbF",
+            "moduleName": "gpupixel",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setStickerMirrorCompensation",
+            "printedName": "setStickerMirrorCompensation(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8gpupixel11FiterHandleC28setStickerMirrorCompensationyySbF",
+            "mangledName": "$s8gpupixel11FiterHandleC28setStickerMirrorCompensationyySbF",
+            "moduleName": "gpupixel",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "rgbaBuffer",
             "printedName": "rgbaBuffer()",
             "children": [
@@ -17647,6 +18440,57 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceiveLocalPixelBuffer",
+            "printedName": "didReceiveLocalPixelBuffer(_:width:height:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "CoreVideo.CVBuffer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CVBuffer",
+                    "printedName": "CoreVideo.CVBuffer",
+                    "usr": "c:@T@CVBufferRef"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@gpupixel@objc(cs)FiterHandle(im)didReceiveLocalPixelBuffer:width:height:",
+            "mangledName": "$s8gpupixel11FiterHandleC26didReceiveLocalPixelBuffer_5width6heightySo11CVBufferRefaSg_s5Int32VAKtF",
+            "moduleName": "gpupixel",
+            "objc_name": "didReceiveLocalPixelBuffer:width:height:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -17666,38 +18510,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -17708,10 +18524,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -17722,10 +18552,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -18714,20 +19558,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "ObservableObject",
             "printedName": "ObservableObject",
             "children": [
@@ -18747,6 +19577,20 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -18944,17 +19788,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -19445,17 +20289,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
             "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -19640,17 +20484,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
             "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -20145,17 +20989,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -20846,13 +21690,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -20864,6 +21701,13 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -21353,17 +22197,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -22726,17 +23570,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -22980,17 +23824,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -23345,17 +24189,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -23408,17 +24252,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -23569,17 +24413,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -23903,13 +24747,6 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Decodable",
                 "printedName": "Decodable",
                 "usr": "s:Se",
@@ -23928,6 +24765,13 @@
                 "printedName": "Equatable",
                 "usr": "s:SQ",
                 "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               }
             ]
           },
@@ -24614,13 +25458,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -24639,6 +25476,13 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -24886,17 +25730,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -25284,17 +26128,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
             "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -25634,17 +26478,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
             "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -26652,20 +27496,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "ObservableObject",
             "printedName": "ObservableObject",
             "children": [
@@ -26685,6 +27515,20 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -26843,17 +27687,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
             "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -27039,448 +27883,455 @@
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 11481,
+      "offset": 12020,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "Dictionary",
-      "offset": 11869,
+      "offset": 12408,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 12590,
+      "offset": 13129,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 15574,
+      "offset": 16245,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16281,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 16182,
+      "offset": 17511,
       "length": 5,
       "value": "\"1.0\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 16546,
+      "offset": 17875,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "Array",
-      "offset": 16872,
+      "offset": 18201,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 18444,
+      "offset": 19773,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 18450,
+      "offset": 19779,
       "length": 11,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 18462,
+      "offset": 19791,
       "length": 11,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 18474,
+      "offset": 19803,
       "length": 7,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 18482,
+      "offset": 19811,
       "length": 11,
       "value": "5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 18494,
+      "offset": 19823,
       "length": 9,
       "value": "6"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 18504,
+      "offset": 19833,
       "length": 5,
       "value": "7"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 21366,
+      "offset": 22695,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 21162,
+      "offset": 22491,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 22577,
+      "offset": 23906,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 22370,
+      "offset": 23699,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "Dictionary",
-      "offset": 22712,
+      "offset": 24041,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 24316,
+      "offset": 25645,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 24323,
+      "offset": 25652,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 24333,
+      "offset": 25662,
       "length": 9,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 24344,
+      "offset": 25673,
       "length": 4,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 24350,
+      "offset": 25679,
       "length": 4,
       "value": "5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25164,
+      "offset": 26493,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25176,
+      "offset": 26505,
       "length": 7,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25208,
+      "offset": 26537,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25243,
+      "offset": 26572,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25278,
+      "offset": 26607,
       "length": 7,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25313,
+      "offset": 26642,
       "length": 5,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25345,
+      "offset": 26674,
       "length": 7,
       "value": "5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25454,
+      "offset": 26783,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25466,
+      "offset": 26795,
       "length": 7,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25497,
+      "offset": 26826,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25528,
+      "offset": 26857,
       "length": 3,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25558,
+      "offset": 26887,
       "length": 7,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25588,
+      "offset": 26917,
       "length": 4,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25618,
+      "offset": 26947,
       "length": 11,
       "value": "5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25723,
+      "offset": 27052,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25735,
+      "offset": 27064,
       "length": 8,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25771,
+      "offset": 27100,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25807,
+      "offset": 27136,
       "length": 9,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25843,
+      "offset": 27172,
       "length": 7,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25879,
+      "offset": 27208,
       "length": 12,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25915,
+      "offset": 27244,
       "length": 6,
       "value": "5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25951,
+      "offset": 27280,
       "length": 12,
       "value": "6"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26059,
+      "offset": 27388,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26071,
+      "offset": 27400,
       "length": 7,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26102,
+      "offset": 27431,
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26133,
+      "offset": 27462,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26164,
+      "offset": 27493,
       "length": 4,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26195,
+      "offset": 27524,
       "length": 5,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26300,
+      "offset": 27629,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26312,
+      "offset": 27641,
       "length": 8,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26347,
+      "offset": 27676,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26382,
+      "offset": 27711,
       "length": 9,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26416,
+      "offset": 27745,
       "length": 11,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26450,
+      "offset": 27779,
       "length": 7,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26556,
+      "offset": 27885,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26568,
+      "offset": 27897,
       "length": 11,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26599,
+      "offset": 27928,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26630,
+      "offset": 27959,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26661,
+      "offset": 27990,
       "length": 5,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26692,
+      "offset": 28021,
       "length": 11,
       "value": "4"
     },
@@ -27501,79 +28352,121 @@
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 628,
+      "offset": 658,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1178,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1331,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1623,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterEngine.swift",
       "kind": "StringLiteral",
-      "offset": 1237,
+      "offset": 3786,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 1865,
+      "offset": 6399,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 1885,
+      "offset": 6419,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 1904,
+      "offset": 6438,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 1924,
+      "offset": 6458,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 1945,
+      "offset": 6479,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 1966,
+      "offset": 6500,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 1985,
+      "offset": 6519,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 2016,
+      "offset": 6550,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterEngine.swift",
       "kind": "StringLiteral",
-      "offset": 4833,
+      "offset": 10073,
       "length": 33,
       "value": "\"https:\/\/api-quickvo.putplay.cc\/\""
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10650,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10655,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10779,
+      "length": 1,
+      "value": "5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
@@ -27608,14 +28501,14 @@
       "kind": "FloatLiteral",
       "offset": 298,
       "length": 3,
-      "value": "0.2"
+      "value": "0.0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
       "offset": 312,
       "length": 3,
-      "value": "0.2"
+      "value": "0.0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
@@ -27866,92 +28759,92 @@
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
       "offset": 1868,
+      "length": 28,
+      "value": "\"roomEffect.flipX.flipYFlag\""
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
+      "kind": "FloatLiteral",
+      "offset": 1908,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
+      "kind": "StringLiteral",
+      "offset": 1972,
       "length": 27,
       "value": "\"roomEffect.toon.threshold\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 1907,
+      "offset": 2011,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 1970,
+      "offset": 2074,
       "length": 37,
       "value": "\"roomEffect.smoothToon.toonThreshold\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 2019,
+      "offset": 2123,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 2092,
+      "offset": 2196,
       "length": 34,
       "value": "\"roomEffect.smoothToon.blurRadius\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 2138,
+      "offset": 2242,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 2406,
+      "offset": 2510,
       "length": 13,
       "value": "\"brightnessV\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "IntegerLiteral",
-      "offset": 2450,
+      "offset": 2554,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "IntegerLiteral",
-      "offset": 2464,
+      "offset": 2568,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 2528,
+      "offset": 2632,
       "length": 9,
       "value": "\"shadowV\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "IntegerLiteral",
-      "offset": 2572,
+      "offset": 2676,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2586,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
-      "kind": "StringLiteral",
-      "offset": 2646,
-      "length": 13,
-      "value": "\"highlightsV\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
@@ -27962,1009 +28855,1023 @@
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
+      "kind": "StringLiteral",
+      "offset": 2750,
+      "length": 13,
+      "value": "\"highlightsV\""
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "IntegerLiteral",
-      "offset": 2704,
+      "offset": 2794,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2808,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 2768,
+      "offset": 2872,
       "length": 11,
       "value": "\"vignetteV\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "IntegerLiteral",
-      "offset": 2812,
+      "offset": 2916,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "IntegerLiteral",
-      "offset": 2826,
+      "offset": 2930,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 2888,
+      "offset": 2992,
       "length": 13,
       "value": "\"saturationV\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "IntegerLiteral",
-      "offset": 2932,
+      "offset": 3036,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "IntegerLiteral",
-      "offset": 2946,
+      "offset": 3050,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 3010,
+      "offset": 3114,
       "length": 11,
       "value": "\"exposureV\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "IntegerLiteral",
-      "offset": 3054,
+      "offset": 3158,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "IntegerLiteral",
-      "offset": 3068,
+      "offset": 3172,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 3130,
+      "offset": 3234,
       "length": 6,
       "value": "\"hueV\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "IntegerLiteral",
-      "offset": 3174,
+      "offset": 3278,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "IntegerLiteral",
-      "offset": 3188,
+      "offset": 3292,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 3243,
+      "offset": 3347,
       "length": 14,
       "value": "\"temperatureV\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 3287,
+      "offset": 3391,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 3303,
+      "offset": 3407,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 3370,
+      "offset": 3474,
       "length": 11,
       "value": "\"contrastV\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 3414,
+      "offset": 3518,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 3428,
+      "offset": 3532,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 3492,
+      "offset": 3596,
       "length": 7,
       "value": "\"tintV\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "IntegerLiteral",
-      "offset": 3536,
+      "offset": 3640,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "IntegerLiteral",
-      "offset": 3550,
+      "offset": 3654,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 3709,
+      "offset": 3813,
       "length": 18,
       "value": "\"styleBeauty.pure\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 3795,
+      "offset": 3899,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 3809,
+      "offset": 3913,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 3851,
+      "offset": 3955,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 3865,
+      "offset": 3969,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 3944,
+      "offset": 4048,
       "length": 18,
       "value": "\"styleBeauty.milk\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 4030,
+      "offset": 4134,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 4044,
+      "offset": 4148,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 4086,
+      "offset": 4190,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 4100,
+      "offset": 4204,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 4179,
+      "offset": 4283,
       "length": 20,
       "value": "\"styleBeauty.divine\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 4267,
+      "offset": 4371,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 4281,
+      "offset": 4385,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 4323,
+      "offset": 4427,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 4337,
+      "offset": 4441,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 4414,
+      "offset": 4518,
       "length": 21,
       "value": "\"styleBeauty.flicker\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 4503,
+      "offset": 4607,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 4517,
+      "offset": 4621,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 4559,
+      "offset": 4663,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 4573,
+      "offset": 4677,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 4651,
+      "offset": 4755,
       "length": 25,
       "value": "\"styleBeauty.paleColored\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 4744,
+      "offset": 4848,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 4758,
+      "offset": 4862,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 4800,
+      "offset": 4904,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 4814,
+      "offset": 4918,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 4896,
+      "offset": 5000,
       "length": 23,
       "value": "\"styleBeauty.smokyEyes\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 4987,
+      "offset": 5091,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 5001,
+      "offset": 5105,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 5043,
+      "offset": 5147,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 5057,
+      "offset": 5161,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 5137,
+      "offset": 5241,
       "length": 19,
       "value": "\"styleBeauty.charm\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 5224,
+      "offset": 5328,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 5238,
+      "offset": 5342,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 5280,
+      "offset": 5384,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 5294,
+      "offset": 5398,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 5479,
+      "offset": 5583,
       "length": 14,
       "value": "\"brow.natural\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 5526,
+      "offset": 5630,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 5540,
+      "offset": 5644,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 5608,
+      "offset": 5712,
       "length": 16,
       "value": "\"brow.thickFlat\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 5655,
+      "offset": 5759,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 5669,
+      "offset": 5773,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 5739,
+      "offset": 5843,
       "length": 15,
       "value": "\"brow.downTail\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 5786,
+      "offset": 5890,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 5800,
+      "offset": 5904,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 5869,
+      "offset": 5973,
       "length": 14,
       "value": "\"brow.distant\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 5916,
+      "offset": 6020,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 5930,
+      "offset": 6034,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 6023,
+      "offset": 6127,
       "length": 18,
       "value": "\"eyelines.natural\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 6073,
+      "offset": 6177,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 6087,
+      "offset": 6191,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 6159,
+      "offset": 6263,
       "length": 18,
       "value": "\"eyelines.playful\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 6209,
+      "offset": 6313,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 6223,
+      "offset": 6327,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 6295,
+      "offset": 6399,
       "length": 14,
       "value": "\"eyelines.sly\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 6345,
+      "offset": 6449,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 6359,
+      "offset": 6463,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 6427,
+      "offset": 6531,
       "length": 18,
       "value": "\"eyelines.elegant\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 6477,
+      "offset": 6581,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 6491,
+      "offset": 6595,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 6563,
+      "offset": 6667,
       "length": 15,
       "value": "\"eyelines.wild\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 6613,
+      "offset": 6717,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 6627,
+      "offset": 6731,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 6722,
+      "offset": 6826,
       "length": 20,
       "value": "\"eyeshadow.mistPink\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 6778,
+      "offset": 6882,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 6792,
+      "offset": 6896,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 6866,
+      "offset": 6970,
       "length": 22,
       "value": "\"eyeshadow.mochaBrown\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 6921,
+      "offset": 7025,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 6935,
+      "offset": 7039,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 7011,
+      "offset": 7115,
       "length": 21,
       "value": "\"eyeshadow.glowHoney\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 7066,
+      "offset": 7170,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 7080,
+      "offset": 7184,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 7155,
+      "offset": 7259,
       "length": 19,
       "value": "\"eyeshadow.warmTea\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 7210,
+      "offset": 7314,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 7224,
+      "offset": 7328,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 7297,
+      "offset": 7401,
       "length": 24,
       "value": "\"eyeshadow.energyOrange\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 7352,
+      "offset": 7456,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 7366,
+      "offset": 7470,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 7465,
+      "offset": 7569,
       "length": 14,
       "value": "\"lash.natural\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 7510,
+      "offset": 7614,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 7524,
+      "offset": 7628,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 7592,
+      "offset": 7696,
       "length": 13,
       "value": "\"lash.gentle\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 7637,
+      "offset": 7741,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 7651,
+      "offset": 7755,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 7718,
+      "offset": 7822,
       "length": 13,
       "value": "\"lash.curled\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 7763,
+      "offset": 7867,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 7777,
+      "offset": 7881,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 7844,
+      "offset": 7948,
       "length": 11,
       "value": "\"lash.long\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 7889,
+      "offset": 7993,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 7903,
+      "offset": 8007,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 7968,
+      "offset": 8072,
       "length": 12,
       "value": "\"lash.dense\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 8013,
+      "offset": 8117,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 8027,
+      "offset": 8131,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 8118,
+      "offset": 8222,
       "length": 19,
       "value": "\"lipstick.roseBean\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 8172,
+      "offset": 8276,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 8186,
+      "offset": 8290,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 8259,
+      "offset": 8363,
       "length": 16,
       "value": "\"lipstick.coral\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 8313,
+      "offset": 8417,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 8327,
+      "offset": 8431,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 8397,
+      "offset": 8501,
       "length": 20,
       "value": "\"lipstick.velvetRed\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 8451,
+      "offset": 8555,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 8465,
+      "offset": 8569,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 8539,
+      "offset": 8643,
       "length": 22,
       "value": "\"lipstick.sweetOrange\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 8593,
+      "offset": 8697,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 8607,
+      "offset": 8711,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 8683,
+      "offset": 8787,
       "length": 18,
       "value": "\"lipstick.rustRed\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 8737,
+      "offset": 8841,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 8751,
+      "offset": 8855,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 8845,
+      "offset": 8949,
       "length": 19,
       "value": "\"blush.apricotPink\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 8895,
+      "offset": 8999,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 8909,
+      "offset": 9013,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 8982,
+      "offset": 9086,
       "length": 18,
       "value": "\"blush.milkOrange\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 9032,
+      "offset": 9136,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 9046,
+      "offset": 9150,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 9118,
+      "offset": 9222,
       "length": 13,
       "value": "\"blush.peach\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 9168,
+      "offset": 9272,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 9182,
+      "offset": 9286,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 9249,
+      "offset": 9353,
       "length": 13,
       "value": "\"blush.tipsy\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 9299,
+      "offset": 9403,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 9313,
+      "offset": 9417,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "StringLiteral",
-      "offset": 9380,
+      "offset": 9484,
       "length": 19,
       "value": "\"blush.sweetOrange\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 9430,
+      "offset": 9534,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterDefault.swift",
       "kind": "FloatLiteral",
-      "offset": 9444,
+      "offset": 9548,
       "length": 3,
       "value": "0.5"
     },
@@ -28995,6 +29902,13 @@
       "offset": 189,
       "length": 3,
       "value": "270"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1072,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Material\/MaterialRepository.swift",

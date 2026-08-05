@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name gpupixel
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name gpupixel
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import Combine
 import Foundation
 import Swift
@@ -183,9 +183,7 @@ public enum RoomEffectFilterCase : Swift.Int, Swift.Sendable, Swift.CaseIterable
   case Screen6
   case Screen9
   case Sepia
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [gpupixel.RoomEffectFilterCase]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [gpupixel.RoomEffectFilterCase] {
@@ -197,6 +195,7 @@ public enum RoomEffectFilterCase : Swift.Int, Swift.Sendable, Swift.CaseIterable
 }
 public enum RoomEffectParamKey : Swift.String, Swift.CaseIterable {
   case flipFlag
+  case flipYFlag
   case threshold
   case toonThreshold
   case blurRadius
@@ -210,9 +209,7 @@ public enum RoomEffectParamKey : Swift.String, Swift.CaseIterable {
     get
   }
   public func getStoredValue() -> Swift.Float
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias AllCases = [gpupixel.RoomEffectParamKey]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [gpupixel.RoomEffectParamKey] {
@@ -292,6 +289,8 @@ public enum RoomStickerFilterCase : Swift.Sendable {
     get
     set
   }
+  public func apply(path: Swift.String)
+  public func clearSticker()
   public func reset()
   @objc deinit
 }
@@ -332,12 +331,8 @@ extension gpupixel.RoomStyleEffectFilter {
   }
   @discardableResult
   public func applyStyle(id: Swift.String) async throws -> Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public func downloadStyleWithProgress(id: Swift.String) async -> Combine.AnyPublisher<gpupixel.DownloadEvent, Swift.Never>?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func styleState(for id: Swift.String) -> gpupixel.UnifiedStickerState?
-  #endif
 }
 public enum StyleEffectError : Swift.Error {
   case repositoryNotAvailable
@@ -351,9 +346,7 @@ public enum StyleEffectError : Swift.Error {
 }
 public enum RoomStyleBeautyCase : Swift.Int, Swift.Sendable, Swift.CaseIterable {
   case none, sweet, temperament, fairSkinned, flicker, paleColored, smokyEyes, Charm
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [gpupixel.RoomStyleBeautyCase]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [gpupixel.RoomStyleBeautyCase] {
@@ -445,9 +438,7 @@ extension gpupixel.RoomStyleBeautyCase {
     }
     public func getValue() -> Swift.Float
     public func setValue(_ newValue: Swift.Float)
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias AllCases = [gpupixel.RoomBeautyFilter.Key]
     public typealias RawValue = Swift.Int
     nonisolated public static var allCases: [gpupixel.RoomBeautyFilter.Key] {
@@ -472,9 +463,7 @@ public enum BeautyBrowStyle : Swift.Int, Swift.Sendable, Swift.CaseIterable {
   case distant
   case sword
   case feather
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [gpupixel.BeautyBrowStyle]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [gpupixel.BeautyBrowStyle] {
@@ -492,9 +481,7 @@ public enum BeautyEyelinesStyle : Swift.Int, Swift.Sendable, Swift.CaseIterable 
   case elegant
   case wild
   case shadowplume
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [gpupixel.BeautyEyelinesStyle]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [gpupixel.BeautyEyelinesStyle] {
@@ -513,9 +500,7 @@ public enum BeautyEyeshadowStyle : Swift.Int, Swift.Sendable, Swift.CaseIterable
   case energyOrange
   case violet
   case delicateRose
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [gpupixel.BeautyEyeshadowStyle]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [gpupixel.BeautyEyeshadowStyle] {
@@ -532,9 +517,7 @@ public enum BeautyLashStyle : Swift.Int, Swift.Sendable, Swift.CaseIterable {
   case curled
   case long
   case dense
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [gpupixel.BeautyLashStyle]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [gpupixel.BeautyLashStyle] {
@@ -551,9 +534,7 @@ public enum BeautyLipstickStyle : Swift.Int, Swift.Sendable, Swift.CaseIterable 
   case velvetRed
   case sweetOrange
   case rustRed
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [gpupixel.BeautyLipstickStyle]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [gpupixel.BeautyLipstickStyle] {
@@ -570,9 +551,7 @@ public enum BeautyBlushStyle : Swift.Int, Swift.Sendable, Swift.CaseIterable {
   case peach
   case tipsy
   case sweetOrange
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [gpupixel.BeautyBlushStyle]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [gpupixel.BeautyBlushStyle] {
@@ -599,16 +578,25 @@ extension gpupixel.RoomFilterKeyType {
   final public var filterHandle: gpupixel.FiterHandle {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   final public var materialRepository: gpupixel.MaterialRepository? {
     get
   }
-  #endif
   @objc deinit
 }
 extension gpupixel.FilterEngine {
   @discardableResult
   public static func create(key: Swift.String, appID: Swift.String) async -> Swift.Bool
+}
+public enum AuthReason : Swift.Sendable, Swift.Equatable {
+  case authorized
+  case networkGracePending
+  case networkGraceExpired
+  case serverDenied
+  public static func == (a: gpupixel.AuthReason, b: gpupixel.AuthReason) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public enum BeautyAuthModule : Swift.Int, Swift.Sendable, Swift.CaseIterable {
   case face
@@ -619,9 +607,7 @@ public enum BeautyAuthModule : Swift.Int, Swift.Sendable, Swift.CaseIterable {
   case effects
   case color
   case virtualBackground
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [gpupixel.BeautyAuthModule]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [gpupixel.BeautyAuthModule] {
@@ -638,6 +624,13 @@ extension gpupixel.FilterEngine {
   public static var authPublisher: Combine.AnyPublisher<Swift.Bool, Swift.Never> {
     get
   }
+  public static var authReason: gpupixel.AuthReason {
+    get
+  }
+  public static var authReasonPublisher: Combine.AnyPublisher<gpupixel.AuthReason, Swift.Never> {
+    get
+  }
+  public static func recheckNow()
   public static func isModuleAuthorized(_ module: gpupixel.BeautyAuthModule) -> Swift.Bool
   public static func isFaceTypeAuthorized(_ faceType: Swift.Int) -> Swift.Bool
   public static func isStyleTypeAuthorized(_ styleType: Swift.Int) -> Swift.Bool
@@ -665,9 +658,7 @@ public enum FilterVideoRotation : Swift.Int {
   case rotation180
   case rotation270
   public func next() -> gpupixel.FilterVideoRotation
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -675,56 +666,46 @@ public enum FilterVideoRotation : Swift.Int {
 }
 @objc @_inheritsConvenienceInitializers final public class FiterHandle : ObjectiveC.NSObject {
   final public var handleBuffer: (((CoreVideo.CVPixelBuffer, gpupixel.FilterVideoRotation)) -> Swift.Void)?
+  final public var handleLocalBuffer: (((CoreVideo.CVPixelBuffer, gpupixel.FilterVideoRotation)) -> Swift.Void)?
   final public var currentRotation: gpupixel.FilterVideoRotation
   @objc deinit
   @objc override dynamic public init()
 }
 extension gpupixel.FiterHandle {
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func process(buffer: CoreVideo.CVPixelBuffer, rotaion: gpupixel.FilterVideoRotation? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func process(buffer: CoreVideo.CVPixelBuffer, rotaion: gpupixel.FilterVideoRotation? = nil, mediaTime: Swift.Double? = nil)
-  #endif
   final public func warmup()
   final public func updateRotation(_ rotation: gpupixel.FilterVideoRotation)
-  #if compiler(>=5.3) && $NonescapableTypes
+  final public func setStickerDualPresent(_ enabled: Swift.Bool)
+  final public func setStickerMirrorCompensation(_ on: Swift.Bool)
   final public func rgbaBuffer() -> Swift.UnsafePointer<Swift.UInt8>?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func i420Buffer() -> Swift.UnsafePointer<Swift.UInt8>?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func frameSize() -> (width: Swift.Int, height: Swift.Int)?
-  #endif
 }
 extension gpupixel.FiterHandle : gpupixel.RTCBeautyFilterDelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func didReceive(_ pixelBuffer: CoreVideo.CVPixelBuffer!, width: Swift.Int32, height: Swift.Int32)
-  #endif
+  @objc final public func didReceiveLocalPixelBuffer(_ pixelBuffer: CoreVideo.CVPixelBuffer!, width: Swift.Int32, height: Swift.Int32)
 }
 final public class MaterialRepository : Foundation.ObservableObject {
-  @Combine.Published @_projectedValueProperty($materials) final public var materials: [gpupixel.CachedBeautyMaterial] {
+  @Combine.Published<[gpupixel.CachedBeautyMaterial]> @_projectedValueProperty($materials) final public var materials: [gpupixel.CachedBeautyMaterial] {
     get
   }
   final public var $materials: Combine.Published<[gpupixel.CachedBeautyMaterial]>.Publisher {
     get
   }
-  @Combine.Published @_projectedValueProperty($unifiedStates) final public var unifiedStates: [Swift.String : gpupixel.UnifiedStickerState] {
+  @Combine.Published<[Swift.String : gpupixel.UnifiedStickerState]> @_projectedValueProperty($unifiedStates) final public var unifiedStates: [Swift.String : gpupixel.UnifiedStickerState] {
     get
   }
   final public var $unifiedStates: Combine.Published<[Swift.String : gpupixel.UnifiedStickerState]>.Publisher {
     get
   }
-  @Combine.Published @_projectedValueProperty($currentCategory) final public var currentCategory: gpupixel.MaterialCategory {
+  @Combine.Published<gpupixel.MaterialCategory> @_projectedValueProperty($currentCategory) final public var currentCategory: gpupixel.MaterialCategory {
     get
   }
   final public var $currentCategory: Combine.Published<gpupixel.MaterialCategory>.Publisher {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(storage: gpupixel.MaterialStorage? = nil) throws
-  #endif
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
@@ -735,20 +716,14 @@ extension gpupixel.MaterialRepository {
   final public var unifiedStatesPublisher: Combine.AnyPublisher<[Swift.String : gpupixel.UnifiedStickerState], Swift.Never> {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func unifiedState(for id: Swift.String) -> gpupixel.UnifiedStickerState?
-  #endif
   final public func refresh(category: gpupixel.MaterialCategory) async
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func refresh(category: gpupixel.MaterialCategory, page: Swift.Int?, size: Swift.Int?) async
-  #endif
   final public func refreshPasters() async
   final public func refreshFilters() async
   final public func refreshPasters(page: Swift.Int, size: Swift.Int) async
   final public func refreshFilters(page: Swift.Int, size: Swift.Int) async
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func downloadWithProgress(id: Swift.String) async -> Combine.AnyPublisher<gpupixel.DownloadEvent, Swift.Never>?
-  #endif
   final public func download(id: Swift.String) async throws -> Swift.String
   final public func download(id: Swift.String, progress: @escaping (Swift.Double) -> Swift.Void) async throws -> Swift.String
   final public func cancelDownload(id: Swift.String) async
@@ -765,9 +740,7 @@ public enum MaterialRepositoryError : Swift.Error {
 }
 final public class MaterialNetworkService {
   public init(session: Foundation.URLSession = .shared)
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func fetchMaterials(category: Swift.String, page: Swift.Int?, size: Swift.Int?) async throws -> gpupixel.PagedResult<gpupixel.StikerRemoteMaterial>
-  #endif
   @objc deinit
 }
 public enum MaterialNetworkError : Swift.Error {
@@ -789,9 +762,7 @@ public actor MaterialStorage {
   public func loadMaterials(for category: gpupixel.MaterialCategory) -> [gpupixel.CachedBeautyMaterial]
   public func saveMaterials(_ materials: [gpupixel.CachedBeautyMaterial], for category: gpupixel.MaterialCategory) throws
   public func downloadedFile(temporaryURL: Foundation.URL, id: Swift.String, for category: gpupixel.MaterialCategory) throws -> Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public func existingLocalPath(for id: Swift.String, category: gpupixel.MaterialCategory) -> Swift.String?
-  #endif
   @objc deinit
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
@@ -801,9 +772,7 @@ public actor MaterialStorage {
 public enum MaterialCategory : Swift.String, Swift.Codable {
   case paster
   case filter
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -813,9 +782,7 @@ public struct PaginationRequest {
   public var page: Swift.Int?
   public var size: Swift.Int?
   public static let all: gpupixel.PaginationRequest
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(page: Swift.Int? = nil, size: Swift.Int? = nil)
-  #endif
 }
 public struct PaginationInfo : Swift.Codable {
   public let page: Swift.Int
@@ -829,9 +796,7 @@ public struct PaginationInfo : Swift.Codable {
 public struct PagedResult<T> {
   public let list: [T]
   public let pagination: gpupixel.PaginationInfo?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(list: [T], pagination: gpupixel.PaginationInfo? = nil)
-  #endif
 }
 public enum UnifiedStickerState : Swift.Equatable {
   case notDownloaded
@@ -852,9 +817,7 @@ final public class NetworkMaterialProvider : gpupixel.MaterialProvider {
 }
 public actor DownloadManager {
   public init()
-  #if compiler(>=5.3) && $NonescapableTypes
   public func startDownload(id: Swift.String, url: Foundation.URL, cacheDirectory: Foundation.URL) -> Combine.AnyPublisher<gpupixel.DownloadEvent, Swift.Never>?
-  #endif
   public func cancelDownload(id: Swift.String)
   public func finish(id: Swift.String)
   public func cancelAllDownloads()
@@ -942,9 +905,7 @@ public enum OriginalAssetStatus : Swift.String, Swift.Codable {
   case downloading
   case downloaded
   case failed
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -965,9 +926,7 @@ public enum StikerNetworkError : Swift.Error {
 final public class StikerNetworkService {
   public init(session: Foundation.URLSession = .shared)
   final public func fetchStikerList() async throws -> [gpupixel.StikerRemoteMaterial]
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func fetchMaterials(category: Swift.String, page: Swift.Int?, size: Swift.Int?) async throws -> gpupixel.PagedResult<gpupixel.StikerRemoteMaterial>
-  #endif
   @objc deinit
 }
 public enum StyleStorageError : Swift.Error {
@@ -987,18 +946,16 @@ extension gpupixel.StyleAssetStorage {
   public func loadMaterials() -> [gpupixel.CachedBeautyMaterial]
   public func saveMaterials(_ materials: [gpupixel.CachedBeautyMaterial]) throws
   public func downloadedFile(temporaryURL: Foundation.URL, id: Swift.String) throws -> Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public func existingLocalPath(for id: Swift.String) -> Swift.String?
-  #endif
 }
 final public class StyleRepository : Foundation.ObservableObject {
-  @Combine.Published @_projectedValueProperty($materials) final public var materials: [gpupixel.CachedBeautyMaterial] {
+  @Combine.Published<[gpupixel.CachedBeautyMaterial]> @_projectedValueProperty($materials) final public var materials: [gpupixel.CachedBeautyMaterial] {
     get
   }
   final public var $materials: Combine.Published<[gpupixel.CachedBeautyMaterial]>.Publisher {
     get
   }
-  @Combine.Published @_projectedValueProperty($unifiedStates) final public var unifiedStates: [Swift.String : gpupixel.UnifiedStickerState] {
+  @Combine.Published<[Swift.String : gpupixel.UnifiedStickerState]> @_projectedValueProperty($unifiedStates) final public var unifiedStates: [Swift.String : gpupixel.UnifiedStickerState] {
     get
   }
   final public var $unifiedStates: Combine.Published<[Swift.String : gpupixel.UnifiedStickerState]>.Publisher {
@@ -1015,13 +972,9 @@ extension gpupixel.StyleRepository {
   final public var unifiedStatesPublisher: Combine.AnyPublisher<[Swift.String : gpupixel.UnifiedStickerState], Swift.Never> {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func unifiedState(for id: Swift.String) -> gpupixel.UnifiedStickerState?
-  #endif
   final public func refreshMaterials() async
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func downloadWithProgress(id: Swift.String) async -> Combine.AnyPublisher<gpupixel.DownloadEvent, Swift.Never>?
-  #endif
   final public func download(id: Swift.String) async throws -> Swift.String
   final public func download(id: Swift.String, progress: @escaping (Swift.Double) -> Swift.Void) async throws -> Swift.String
   final public func cancelDownload(id: Swift.String) async
@@ -1070,6 +1023,7 @@ extension gpupixel.BeautyLipstickStyle : Swift.RawRepresentable {}
 extension gpupixel.BeautyBlushStyle : Swift.Equatable {}
 extension gpupixel.BeautyBlushStyle : Swift.Hashable {}
 extension gpupixel.BeautyBlushStyle : Swift.RawRepresentable {}
+extension gpupixel.AuthReason : Swift.Hashable {}
 extension gpupixel.BeautyAuthModule : Swift.Equatable {}
 extension gpupixel.BeautyAuthModule : Swift.Hashable {}
 extension gpupixel.BeautyAuthModule : Swift.RawRepresentable {}

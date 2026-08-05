@@ -101,6 +101,7 @@
 #include "gpupixel/filter/weak_pixel_inclusion_filter.h"
 #include "gpupixel/filter/white_balance_filter.h"
 #include "gpupixel/filter/background_segment_filter.h"
+#include "gpupixel/filter/background_segment_filter2.h"
 #include "gpupixel/filter/effect_glitch_filter.h"
 #include "gpupixel/filter/effect_inout_filter.h"
 #include "gpupixel/filter/effect_mosaic_filter.h"
