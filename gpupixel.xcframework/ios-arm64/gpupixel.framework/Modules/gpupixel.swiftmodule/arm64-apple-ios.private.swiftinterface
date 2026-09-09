@@ -289,8 +289,6 @@ public enum RoomStickerFilterCase : Swift.Sendable {
     get
     set
   }
-  public func apply(path: Swift.String)
-  public func clearSticker()
   public func reset()
   @objc deinit
 }
@@ -658,6 +656,7 @@ public enum FilterVideoRotation : Swift.Int {
   case rotation180
   case rotation270
   public func next() -> gpupixel.FilterVideoRotation
+  public static func from(preferredTransform t: CoreFoundation.CGAffineTransform) -> gpupixel.FilterVideoRotation
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -667,13 +666,33 @@ public enum FilterVideoRotation : Swift.Int {
 @objc @_inheritsConvenienceInitializers final public class FiterHandle : ObjectiveC.NSObject {
   final public var handleBuffer: (((CoreVideo.CVPixelBuffer, gpupixel.FilterVideoRotation)) -> Swift.Void)?
   final public var handleLocalBuffer: (((CoreVideo.CVPixelBuffer, gpupixel.FilterVideoRotation)) -> Swift.Void)?
+  final public var handleBGRABuffer: (((CoreVideo.CVPixelBuffer, gpupixel.FilterVideoRotation)) -> Swift.Void)? {
+    get
+    set
+  }
+  final public var externalLandmarksAuthoritative: Swift.Bool {
+    get
+    set
+  }
+  final public var landmarkTrust: Swift.Float {
+    get
+    set
+  }
   final public var currentRotation: gpupixel.FilterVideoRotation
   @objc deinit
   @objc override dynamic public init()
 }
 extension gpupixel.FiterHandle {
+  final public func setNextOutputBuffer(_ buffer: CoreVideo.CVPixelBuffer?)
   final public func process(buffer: CoreVideo.CVPixelBuffer, rotaion: gpupixel.FilterVideoRotation? = nil)
   final public func process(buffer: CoreVideo.CVPixelBuffer, rotaion: gpupixel.FilterVideoRotation? = nil, mediaTime: Swift.Double? = nil)
+  @discardableResult
+  final public func process(textureId: Swift.UInt32, width: Swift.Int, height: Swift.Int, textureType: Swift.Int = 0, rotaion: gpupixel.FilterVideoRotation? = nil, mediaTime: Swift.Double? = nil, landmarks: [Swift.Float]? = nil, usedRot: Swift.Int = 0) -> Swift.Bool
+  @discardableResult
+  final public func processAsTexture(buffer: CoreVideo.CVPixelBuffer, rotaion: gpupixel.FilterVideoRotation? = nil, mediaTime: Swift.Double? = nil, landmarks: [Swift.Float]? = nil, usedRot: Swift.Int = 0) -> Swift.Bool
+  @discardableResult
+  final public func processNV12AsTexture(buffer: CoreVideo.CVPixelBuffer, ycbcrParameters: Swift.UnsafePointer<Swift.Float>, rotaion: gpupixel.FilterVideoRotation? = nil, mediaTime: Swift.Double? = nil, landmarks: [Swift.Float]? = nil, usedRot: Swift.Int = 0) -> Swift.Bool
+  final public func processMovFrame(buffer: CoreVideo.CVPixelBuffer, preferredTransform: CoreFoundation.CGAffineTransform, mediaTime: Swift.Double? = nil)
   final public func warmup()
   final public func updateRotation(_ rotation: gpupixel.FilterVideoRotation)
   final public func setStickerDualPresent(_ enabled: Swift.Bool)
@@ -685,6 +704,7 @@ extension gpupixel.FiterHandle {
 extension gpupixel.FiterHandle : gpupixel.RTCBeautyFilterDelegate {
   @objc final public func didReceive(_ pixelBuffer: CoreVideo.CVPixelBuffer!, width: Swift.Int32, height: Swift.Int32)
   @objc final public func didReceiveLocalPixelBuffer(_ pixelBuffer: CoreVideo.CVPixelBuffer!, width: Swift.Int32, height: Swift.Int32)
+  @objc final public func didReceiveBGRAPixelBuffer(_ pixelBuffer: CoreVideo.CVPixelBuffer!, width: Swift.Int32, height: Swift.Int32)
 }
 final public class MaterialRepository : Foundation.ObservableObject {
   @Combine.Published<[gpupixel.CachedBeautyMaterial]> @_projectedValueProperty($materials) final public var materials: [gpupixel.CachedBeautyMaterial] {

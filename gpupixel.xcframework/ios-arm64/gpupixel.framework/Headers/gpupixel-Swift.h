@@ -378,6 +378,12 @@ SWIFT_CLASS("_TtC8gpupixel11FiterHandle")
 @interface FiterHandle (SWIFT_EXTENSION(gpupixel)) <RTCBeautyFilterDelegate>
 - (void)didReceivePixelBuffer:(CVPixelBufferRef _Null_unspecified)pixelBuffer width:(int32_t)width height:(int32_t)height;
 - (void)didReceiveLocalPixelBuffer:(CVPixelBufferRef _Null_unspecified)pixelBuffer width:(int32_t)width height:(int32_t)height;
+/// 零拷贝主输出。
+/// 本方法<em>始终存在</em>，是否真的回调由 <code>RTCBeautyFilter.zeroCopyOutputPreferred</code> 决定
+/// （由 <code>handleBGRABuffer</code> 的有无联动设置）。这样拆分是必要的：ObjC 侧的启用判定用
+/// <code>respondsToSelector:</code>，而方法一旦实现就恒为真，若不另设开关，零拷贝会在本包装
+/// 存在的那一刻永久开启，NV12 回调对所有既有消费方同时停止且无法回滚。
+- (void)didReceiveBGRAPixelBuffer:(CVPixelBufferRef _Null_unspecified)pixelBuffer width:(int32_t)width height:(int32_t)height;
 @end
 
 #endif // defined(__OBJC__)

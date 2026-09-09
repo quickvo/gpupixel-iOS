@@ -6,15 +6,19 @@
 	<dict>
 		<key>Headers/RTCBeautyFilter.h</key>
 		<data>
-		j3q8WdAuMz7W/Rmq05nJMzwLEMY=
+		s/0oTB9S9TxAU+9BGfoFMb1nh6E=
+		</data>
+		<key>Headers/RTCFaceLandmarkDetector.h</key>
+		<data>
+		3qWhaHmQP+yBZn0yVNK2sCrCYZU=
 		</data>
 		<key>Headers/gpupixel-Swift.h</key>
 		<data>
-		UgjhTTgZz1AWTY8t3DMcJf+N8Bo=
+		CTlBKjm7h27zAcVue2WHYl1BtC4=
 		</data>
 		<key>Headers/gpupixel.h</key>
 		<data>
-		fpvNDhoP73F7Wjc7fzlUi0sf9GQ=
+		W2pqERqwerkk1QQxF5wOngatvwQ=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -22,27 +26,27 @@
 		</data>
 		<key>Modules/gpupixel.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		gfwKEWwOKv8+YKoyGI0AYi+T8AA=
+		GgYQdfGZNUC4cDsbHKb/e+lagRk=
 		</data>
 		<key>Modules/gpupixel.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		yTgRE3rMAqAUgRyO3A1E19OZnnw=
+		yRdqZn76ysOJGPqsNOG5407IUBI=
 		</data>
 		<key>Modules/gpupixel.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		nUqN2GDAtA2+x2h6Abdek4nr57U=
+		43dDngJfURkvSua0KIw8DkoDFpE=
 		</data>
 		<key>Modules/gpupixel.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		kYZuhKp15dwa0YZ9qfjRQsevhQs=
+		TmDcGfAuNznuBAdyTnpVUhJ149I=
 		</data>
 		<key>Modules/gpupixel.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		nUqN2GDAtA2+x2h6Abdek4nr57U=
+		43dDngJfURkvSua0KIw8DkoDFpE=
 		</data>
 		<key>Modules/gpupixel.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		rJGZcwWzxd3OlLF+5pxkyNFWY5M=
+		hl3ReJhoxeAaMnOQd1KIiUZWrwo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -395,63 +399,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nOuxi/R5TJxI0MfYkGJFmRSFdKeaMXszIELMnEEpDx8=
+			WATd7FtCr/R1/pLR3Fliv3ZJrChK5Y2o4vTCZraJ0Mc=
+			</data>
+		</dict>
+		<key>Headers/RTCFaceLandmarkDetector.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DOuH/8on/u5VQiQ4SS5jCvJw9UwSUSSdkn2t3SQs43c=
 			</data>
 		</dict>
 		<key>Headers/gpupixel-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9dsqPoBY2U5FqTZMco4WKCpUoq+7O6wOpIRl/+mh7UA=
+			jxoS0Te0WoQTQnZ0ju5hxbBH7GecXd5BAvbvWV03mLo=
 			</data>
 		</dict>
 		<key>Headers/gpupixel.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NTsYD5zqlaiYExIvd/IgflcQxjyIc2Fo7NaBgiMNegk=
+			aWvzm533Najy0zScjMJeVRrhHDvX4BeYeM+fCi4hSEw=
 			</data>
 		</dict>
 		<key>Modules/gpupixel.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			emptbYXK5/JqXR0SMo/ENBjlaHyEmCMzAXkQyJwfVbk=
+			XO7WZ+9XfczcSqyuGKAaRd2RVVBr8btcEju6Yp0rE/A=
 			</data>
 		</dict>
 		<key>Modules/gpupixel.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RcPnJiJjGhtAALHGy2trZSaAyrsyiSaSGWcaJMdQOjc=
+			0IIqYswvXNqaY/H6Wyod7itturtQLLI0GEhxxOyzgwA=
 			</data>
 		</dict>
 		<key>Modules/gpupixel.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9rdUMsNPLmZdFot4D1uaZJqesi1fkFPt2YyksDIvuF0=
+			M6zfEzxdsrIeBMasQVB7R9ZmTyO9iDZfx0EdRqFVH0c=
 			</data>
 		</dict>
 		<key>Modules/gpupixel.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1nCN0RfiL0+k+8hioeNrAbRp43Q7YQZ2b7x9fTTHS5w=
+			3dCmUxHCUHoxh6BCTkS1z/albyS1uzik4xOs1/ZkifA=
 			</data>
 		</dict>
 		<key>Modules/gpupixel.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9rdUMsNPLmZdFot4D1uaZJqesi1fkFPt2YyksDIvuF0=
+			M6zfEzxdsrIeBMasQVB7R9ZmTyO9iDZfx0EdRqFVH0c=
 			</data>
 		</dict>
 		<key>Modules/gpupixel.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jALjTQRq/uOROKTxuehrRxeGvZ9m5D1hhQeZhYPpLFs=
+			AlJb6t6+O8Tq4D1lYdQQQF9z17NFTpOBQ9JZwhiB4Hc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

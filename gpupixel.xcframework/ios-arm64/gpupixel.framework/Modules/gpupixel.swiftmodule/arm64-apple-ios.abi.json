@@ -7592,54 +7592,6 @@
           },
           {
             "kind": "Function",
-            "name": "apply",
-            "printedName": "apply(path:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8gpupixel17RoomStickerFilterC5apply4pathySS_tF",
-            "mangledName": "$s8gpupixel17RoomStickerFilterC5apply4pathySS_tF",
-            "moduleName": "gpupixel",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "clearSticker",
-            "printedName": "clearSticker()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8gpupixel17RoomStickerFilterC05clearC0yyF",
-            "mangledName": "$s8gpupixel17RoomStickerFilterC05clearC0yyF",
-            "moduleName": "gpupixel",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "reset",
             "printedName": "reset()",
             "children": [
@@ -17407,6 +17359,35 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "from",
+            "printedName": "from(preferredTransform:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FilterVideoRotation",
+                "printedName": "gpupixel.FilterVideoRotation",
+                "usr": "s:8gpupixel19FilterVideoRotationO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGAffineTransform",
+                "printedName": "CoreFoundation.CGAffineTransform",
+                "usr": "c:@S@CGAffineTransform"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8gpupixel19FilterVideoRotationO4from18preferredTransformACSo08CGAffineG0V_tFZ",
+            "mangledName": "$s8gpupixel19FilterVideoRotationO4from18preferredTransformACSo08CGAffineG0V_tFZ",
+            "moduleName": "gpupixel",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -17939,6 +17920,396 @@
           },
           {
             "kind": "Var",
+            "name": "handleBGRABuffer",
+            "printedName": "handleBGRABuffer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(((CoreVideo.CVBuffer, gpupixel.FilterVideoRotation)) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "((CoreVideo.CVBuffer, gpupixel.FilterVideoRotation)) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(CoreVideo.CVBuffer, gpupixel.FilterVideoRotation)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CVBuffer",
+                            "printedName": "CoreVideo.CVBuffer",
+                            "usr": "c:@T@CVBufferRef"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FilterVideoRotation",
+                            "printedName": "gpupixel.FilterVideoRotation",
+                            "usr": "s:8gpupixel19FilterVideoRotationO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8gpupixel11FiterHandleC16handleBGRABufferySo11CVBufferRefa_AA19FilterVideoRotationOt_tcSgvp",
+            "mangledName": "$s8gpupixel11FiterHandleC16handleBGRABufferySo11CVBufferRefa_AA19FilterVideoRotationOt_tcSgvp",
+            "moduleName": "gpupixel",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(((CoreVideo.CVBuffer, gpupixel.FilterVideoRotation)) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "((CoreVideo.CVBuffer, gpupixel.FilterVideoRotation)) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(CoreVideo.CVBuffer, gpupixel.FilterVideoRotation)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CVBuffer",
+                                "printedName": "CoreVideo.CVBuffer",
+                                "usr": "c:@T@CVBufferRef"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "FilterVideoRotation",
+                                "printedName": "gpupixel.FilterVideoRotation",
+                                "usr": "s:8gpupixel19FilterVideoRotationO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8gpupixel11FiterHandleC16handleBGRABufferySo11CVBufferRefa_AA19FilterVideoRotationOt_tcSgvg",
+                "mangledName": "$s8gpupixel11FiterHandleC16handleBGRABufferySo11CVBufferRefa_AA19FilterVideoRotationOt_tcSgvg",
+                "moduleName": "gpupixel",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(((CoreVideo.CVBuffer, gpupixel.FilterVideoRotation)) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "((CoreVideo.CVBuffer, gpupixel.FilterVideoRotation)) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(CoreVideo.CVBuffer, gpupixel.FilterVideoRotation)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CVBuffer",
+                                "printedName": "CoreVideo.CVBuffer",
+                                "usr": "c:@T@CVBufferRef"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "FilterVideoRotation",
+                                "printedName": "gpupixel.FilterVideoRotation",
+                                "usr": "s:8gpupixel19FilterVideoRotationO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8gpupixel11FiterHandleC16handleBGRABufferySo11CVBufferRefa_AA19FilterVideoRotationOt_tcSgvs",
+                "mangledName": "$s8gpupixel11FiterHandleC16handleBGRABufferySo11CVBufferRefa_AA19FilterVideoRotationOt_tcSgvs",
+                "moduleName": "gpupixel",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8gpupixel11FiterHandleC16handleBGRABufferySo11CVBufferRefa_AA19FilterVideoRotationOt_tcSgvM",
+                "mangledName": "$s8gpupixel11FiterHandleC16handleBGRABufferySo11CVBufferRefa_AA19FilterVideoRotationOt_tcSgvM",
+                "moduleName": "gpupixel",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "externalLandmarksAuthoritative",
+            "printedName": "externalLandmarksAuthoritative",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8gpupixel11FiterHandleC30externalLandmarksAuthoritativeSbvp",
+            "mangledName": "$s8gpupixel11FiterHandleC30externalLandmarksAuthoritativeSbvp",
+            "moduleName": "gpupixel",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8gpupixel11FiterHandleC30externalLandmarksAuthoritativeSbvg",
+                "mangledName": "$s8gpupixel11FiterHandleC30externalLandmarksAuthoritativeSbvg",
+                "moduleName": "gpupixel",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8gpupixel11FiterHandleC30externalLandmarksAuthoritativeSbvs",
+                "mangledName": "$s8gpupixel11FiterHandleC30externalLandmarksAuthoritativeSbvs",
+                "moduleName": "gpupixel",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8gpupixel11FiterHandleC30externalLandmarksAuthoritativeSbvM",
+                "mangledName": "$s8gpupixel11FiterHandleC30externalLandmarksAuthoritativeSbvM",
+                "moduleName": "gpupixel",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "landmarkTrust",
+            "printedName": "landmarkTrust",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8gpupixel11FiterHandleC13landmarkTrustSfvp",
+            "mangledName": "$s8gpupixel11FiterHandleC13landmarkTrustSfvp",
+            "moduleName": "gpupixel",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8gpupixel11FiterHandleC13landmarkTrustSfvg",
+                "mangledName": "$s8gpupixel11FiterHandleC13landmarkTrustSfvg",
+                "moduleName": "gpupixel",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8gpupixel11FiterHandleC13landmarkTrustSfvs",
+                "mangledName": "$s8gpupixel11FiterHandleC13landmarkTrustSfvs",
+                "moduleName": "gpupixel",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8gpupixel11FiterHandleC13landmarkTrustSfvM",
+                "mangledName": "$s8gpupixel11FiterHandleC13landmarkTrustSfvM",
+                "moduleName": "gpupixel",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "currentRotation",
             "printedName": "currentRotation",
             "children": [
@@ -18062,6 +18433,42 @@
           },
           {
             "kind": "Function",
+            "name": "setNextOutputBuffer",
+            "printedName": "setNextOutputBuffer(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreVideo.CVBuffer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CVBuffer",
+                    "printedName": "CoreVideo.CVBuffer",
+                    "usr": "c:@T@CVBufferRef"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8gpupixel11FiterHandleC19setNextOutputBufferyySo11CVBufferRefaSgF",
+            "mangledName": "$s8gpupixel11FiterHandleC19setNextOutputBufferyySo11CVBufferRefaSgF",
+            "moduleName": "gpupixel",
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "process",
             "printedName": "process(buffer:rotaion:)",
             "children": [
@@ -18155,6 +18562,362 @@
             "moduleName": "gpupixel",
             "declAttributes": [
               "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "process",
+            "printedName": "process(textureId:width:height:textureType:rotaion:mediaTime:landmarks:usedRot:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt32",
+                "printedName": "Swift.UInt32",
+                "usr": "s:s6UInt32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "gpupixel.FilterVideoRotation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FilterVideoRotation",
+                    "printedName": "gpupixel.FilterVideoRotation",
+                    "usr": "s:8gpupixel19FilterVideoRotationO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Float]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Float]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8gpupixel11FiterHandleC7process9textureId5width6height0E4Type7rotaion9mediaTime9landmarks7usedRotSbs6UInt32V_S3iAA19FilterVideoRotationOSgSdSgSaySfGSgSitF",
+            "mangledName": "$s8gpupixel11FiterHandleC7process9textureId5width6height0E4Type7rotaion9mediaTime9landmarks7usedRotSbs6UInt32V_S3iAA19FilterVideoRotationOSgSdSgSaySfGSgSitF",
+            "moduleName": "gpupixel",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "processAsTexture",
+            "printedName": "processAsTexture(buffer:rotaion:mediaTime:landmarks:usedRot:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CVBuffer",
+                "printedName": "CoreVideo.CVBuffer",
+                "usr": "c:@T@CVBufferRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "gpupixel.FilterVideoRotation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FilterVideoRotation",
+                    "printedName": "gpupixel.FilterVideoRotation",
+                    "usr": "s:8gpupixel19FilterVideoRotationO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Float]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Float]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8gpupixel11FiterHandleC16processAsTexture6buffer7rotaion9mediaTime9landmarks7usedRotSbSo11CVBufferRefa_AA19FilterVideoRotationOSgSdSgSaySfGSgSitF",
+            "mangledName": "$s8gpupixel11FiterHandleC16processAsTexture6buffer7rotaion9mediaTime9landmarks7usedRotSbSo11CVBufferRefa_AA19FilterVideoRotationOSgSdSgSaySfGSgSitF",
+            "moduleName": "gpupixel",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "processNV12AsTexture",
+            "printedName": "processNV12AsTexture(buffer:ycbcrParameters:rotaion:mediaTime:landmarks:usedRot:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CVBuffer",
+                "printedName": "CoreVideo.CVBuffer",
+                "usr": "c:@T@CVBufferRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:SP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "gpupixel.FilterVideoRotation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FilterVideoRotation",
+                    "printedName": "gpupixel.FilterVideoRotation",
+                    "usr": "s:8gpupixel19FilterVideoRotationO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Float]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Float]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8gpupixel11FiterHandleC20processNV12AsTexture6buffer15ycbcrParameters7rotaion9mediaTime9landmarks7usedRotSbSo11CVBufferRefa_SPySfGAA19FilterVideoRotationOSgSdSgSaySfGSgSitF",
+            "mangledName": "$s8gpupixel11FiterHandleC20processNV12AsTexture6buffer15ycbcrParameters7rotaion9mediaTime9landmarks7usedRotSbSo11CVBufferRefa_SPySfGAA19FilterVideoRotationOSgSdSgSaySfGSgSitF",
+            "moduleName": "gpupixel",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "processMovFrame",
+            "printedName": "processMovFrame(buffer:preferredTransform:mediaTime:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CVBuffer",
+                "printedName": "CoreVideo.CVBuffer",
+                "usr": "c:@T@CVBufferRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGAffineTransform",
+                "printedName": "CoreFoundation.CGAffineTransform",
+                "usr": "c:@S@CGAffineTransform"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8gpupixel11FiterHandleC15processMovFrame6buffer18preferredTransform9mediaTimeySo11CVBufferRefa_So08CGAffineI0VSdSgtF",
+            "mangledName": "$s8gpupixel11FiterHandleC15processMovFrame6buffer18preferredTransform9mediaTimeySo11CVBufferRefa_So08CGAffineI0VSdSgtF",
+            "moduleName": "gpupixel",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -18483,6 +19246,57 @@
             "mangledName": "$s8gpupixel11FiterHandleC26didReceiveLocalPixelBuffer_5width6heightySo11CVBufferRefaSg_s5Int32VAKtF",
             "moduleName": "gpupixel",
             "objc_name": "didReceiveLocalPixelBuffer:width:height:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceiveBGRAPixelBuffer",
+            "printedName": "didReceiveBGRAPixelBuffer(_:width:height:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "CoreVideo.CVBuffer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CVBuffer",
+                    "printedName": "CoreVideo.CVBuffer",
+                    "usr": "c:@T@CVBufferRef"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@gpupixel@objc(cs)FiterHandle(im)didReceiveBGRAPixelBuffer:width:height:",
+            "mangledName": "$s8gpupixel11FiterHandleC25didReceiveBGRAPixelBuffer_5width6heightySo11CVBufferRefaSg_s5Int32VAKtF",
+            "moduleName": "gpupixel",
+            "objc_name": "didReceiveBGRAPixelBuffer:width:height:",
             "declAttributes": [
               "Final",
               "ObjC",
@@ -27904,434 +28718,427 @@
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 16245,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 16281,
+      "offset": 16113,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 17511,
+      "offset": 16721,
       "length": 5,
       "value": "\"1.0\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 17875,
+      "offset": 17085,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "Array",
-      "offset": 18201,
+      "offset": 17411,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 19773,
+      "offset": 18983,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 19779,
+      "offset": 18989,
       "length": 11,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 19791,
+      "offset": 19001,
       "length": 11,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 19803,
+      "offset": 19013,
       "length": 7,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 19811,
+      "offset": 19021,
       "length": 11,
       "value": "5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 19823,
+      "offset": 19033,
       "length": 9,
       "value": "6"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 19833,
+      "offset": 19043,
       "length": 5,
       "value": "7"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 22695,
+      "offset": 21905,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 22491,
+      "offset": 21701,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 23906,
+      "offset": 23116,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 23699,
+      "offset": 22909,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "Dictionary",
-      "offset": 24041,
+      "offset": 23251,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25645,
+      "offset": 24855,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25652,
+      "offset": 24862,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25662,
+      "offset": 24872,
       "length": 9,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25673,
+      "offset": 24883,
       "length": 4,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 25679,
+      "offset": 24889,
       "length": 4,
       "value": "5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26493,
+      "offset": 25703,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26505,
+      "offset": 25715,
       "length": 7,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26537,
+      "offset": 25747,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26572,
+      "offset": 25782,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26607,
+      "offset": 25817,
       "length": 7,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26642,
+      "offset": 25852,
       "length": 5,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26674,
+      "offset": 25884,
       "length": 7,
       "value": "5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26783,
+      "offset": 25993,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26795,
+      "offset": 26005,
       "length": 7,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26826,
+      "offset": 26036,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26857,
+      "offset": 26067,
       "length": 3,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26887,
+      "offset": 26097,
       "length": 7,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26917,
+      "offset": 26127,
       "length": 4,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 26947,
+      "offset": 26157,
       "length": 11,
       "value": "5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27052,
+      "offset": 26262,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27064,
+      "offset": 26274,
       "length": 8,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27100,
+      "offset": 26310,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27136,
+      "offset": 26346,
       "length": 9,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27172,
+      "offset": 26382,
       "length": 7,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27208,
+      "offset": 26418,
       "length": 12,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27244,
+      "offset": 26454,
       "length": 6,
       "value": "5"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27280,
+      "offset": 26490,
       "length": 12,
       "value": "6"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27388,
+      "offset": 26598,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27400,
+      "offset": 26610,
       "length": 7,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27431,
+      "offset": 26641,
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27462,
+      "offset": 26672,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27493,
+      "offset": 26703,
       "length": 4,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27524,
+      "offset": 26734,
       "length": 5,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27629,
+      "offset": 26839,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27641,
+      "offset": 26851,
       "length": 8,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27676,
+      "offset": 26886,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27711,
+      "offset": 26921,
       "length": 9,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27745,
+      "offset": 26955,
       "length": 11,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27779,
+      "offset": 26989,
       "length": 7,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27885,
+      "offset": 27095,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27897,
+      "offset": 27107,
       "length": 11,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27928,
+      "offset": 27138,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27959,
+      "offset": 27169,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 27990,
+      "offset": 27200,
       "length": 5,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 28021,
+      "offset": 27231,
       "length": 11,
       "value": "4"
     },
@@ -29906,9 +30713,184 @@
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 1072,
+      "offset": 1823,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3832,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4583,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9881,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10085,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12009,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14899,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18122,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18147,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18172,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18178,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 18384,
+      "length": 91,
+      "value": "\"📷[GPUPixel][CAMERA] #%d %dx%d fmt=0x%08x rot=%d mediaTime=%.3f  ← 摄像头实时流\""
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18841,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18866,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18891,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18897,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 19075,
+      "length": 183,
+      "value": "\"🎬[GPUPixel][MOV] #\""
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 19109,
+      "length": 3,
+      "value": "\" via=\""
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 19120,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 19125,
+      "length": 1,
+      "value": "\"x\""
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 19130,
+      "length": 3,
+      "value": "\" fmt=0x\""
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19158,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 19162,
+      "length": 3,
+      "value": "\" rot=\""
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 19187,
+      "length": 9,
+      "value": "\" mediaTime=\""
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 19215,
+      "length": 6,
+      "value": "\"%.3f\""
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Engine\/FiterHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 19234,
+      "length": 3,
+      "value": "\"  ← 视频解码\/.mov\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_gpupixel\/gpupixel\/src\/iOS\/Filter\/Material\/MaterialRepository.swift",

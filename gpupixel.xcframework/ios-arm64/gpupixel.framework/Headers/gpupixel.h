@@ -17,6 +17,11 @@
 #elif __has_include("iOS/Filter/Objc/RTCBeautyFilter.h")
 #import "iOS/Filter/Objc/RTCBeautyFilter.h"
 #endif
+#if __has_include(<gpupixel/RTCFaceLandmarkDetector.h>)
+#import <gpupixel/RTCFaceLandmarkDetector.h>
+#elif __has_include("iOS/Filter/Objc/RTCFaceLandmarkDetector.h")
+#import "iOS/Filter/Objc/RTCFaceLandmarkDetector.h"
+#endif
 #endif
 
 #ifdef __cplusplus
