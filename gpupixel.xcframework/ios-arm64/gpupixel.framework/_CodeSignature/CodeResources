@@ -6,47 +6,43 @@
 	<dict>
 		<key>Headers/RTCBeautyFilter.h</key>
 		<data>
-		s/0oTB9S9TxAU+9BGfoFMb1nh6E=
-		</data>
-		<key>Headers/RTCFaceLandmarkDetector.h</key>
-		<data>
-		3qWhaHmQP+yBZn0yVNK2sCrCYZU=
+		lTj5Jx1FnHyfzbrmoNJpmKG39dI=
 		</data>
 		<key>Headers/gpupixel-Swift.h</key>
 		<data>
-		CTlBKjm7h27zAcVue2WHYl1BtC4=
+		lrRuWBDXU99QE6kDTbyC+eAHrck=
 		</data>
 		<key>Headers/gpupixel.h</key>
 		<data>
-		W2pqERqwerkk1QQxF5wOngatvwQ=
+		15t5UO+B7Whr9aJB9jms2E3572A=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dLjIfcJvtfkTYf5ofFF3IYcCI1w=
+		ioesRwfRUICuKVB8wlGS2noWC3c=
 		</data>
 		<key>Modules/gpupixel.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		GgYQdfGZNUC4cDsbHKb/e+lagRk=
+		hEropAjdhn8w1hPG9z3GMUZ9D/E=
 		</data>
 		<key>Modules/gpupixel.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		yRdqZn76ysOJGPqsNOG5407IUBI=
+		FCNnYdOpJEAVN0hdqmi0pXC7kjc=
 		</data>
 		<key>Modules/gpupixel.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		43dDngJfURkvSua0KIw8DkoDFpE=
+		8Tkd7JermSgpKfmoK3B5KQ/fUPU=
 		</data>
 		<key>Modules/gpupixel.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		TmDcGfAuNznuBAdyTnpVUhJ149I=
+		FaLvNiKmOkSL3i5nZVJ5HOta4IY=
 		</data>
 		<key>Modules/gpupixel.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		43dDngJfURkvSua0KIw8DkoDFpE=
+		8Tkd7JermSgpKfmoK3B5KQ/fUPU=
 		</data>
 		<key>Modules/gpupixel.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		hl3ReJhoxeAaMnOQd1KIiUZWrwo=
+		cvBnHVFjB7rVYvMYG/U8G9bqqeY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -136,6 +132,10 @@
 		<data>
 		uU0/WC6g9MYFHwzYW6Va6uqsf44=
 		</data>
+		<key>res/cook.gpres</key>
+		<data>
+		h16bMEuT60JcLRrnUTso/pKl1/w=
+		</data>
 		<key>res/cy_filter.gpres</key>
 		<data>
 		3CwOoUUHPOeg9m01VYl132mSLxk=
@@ -143,6 +143,10 @@
 		<key>res/cy_lash.gpres</key>
 		<data>
 		QhSRJxpwRLufheypG/g26bzEjvs=
+		</data>
+		<key>res/dogFace.gpres</key>
+		<data>
+		y7KDL6XzbP/g/kcherzdoA+8/Vc=
 		</data>
 		<key>res/eyeShadow_nx.gpres</key>
 		<data>
@@ -203,6 +207,30 @@
 		<key>res/fwh_eyeshadow_1.gpres</key>
 		<data>
 		h7/heezcSd4+u83S4Gd1x7bxhSs=
+		</data>
+		<key>res/hanxi_style/brow.gpres</key>
+		<data>
+		adURgWra+zX2UoJ4PbirIgb+F4s=
+		</data>
+		<key>res/hanxi_style/default_lips.gpres</key>
+		<data>
+		NZRglECsbHFmOOq3ct+MpoV21+8=
+		</data>
+		<key>res/hanxi_style/eyeshadow.gpres</key>
+		<data>
+		Gcrc3nCOqh4lvj9WJPfKWwbYosE=
+		</data>
+		<key>res/hanxi_style/filter.gpres</key>
+		<data>
+		5cl73bKssSzfpxrVeW4dKQ8O3sk=
+		</data>
+		<key>res/hanxi_style/lash.gpres</key>
+		<data>
+		q/QdYTQGq4udDcRJEnb4FT8rWBc=
+		</data>
+		<key>res/iris.gpres</key>
+		<data>
+		xtFu0OVT4acVtpzkgpv8g9VOGE8=
 		</data>
 		<key>res/joker_style/blusher.gpres</key>
 		<data>
@@ -328,6 +356,34 @@
 		<data>
 		204RJBXSTwglxcIRYz8FMdXlAJA=
 		</data>
+		<key>res/shensui_filter.gpres</key>
+		<data>
+		gKlC76MgEBGzyZA6SbEEUVeD7dM=
+		</data>
+		<key>res/shensui_style/blusher.gpres</key>
+		<data>
+		CrfCNozj5cv/OvixH+ipqDUIabI=
+		</data>
+		<key>res/shensui_style/brow.gpres</key>
+		<data>
+		7OnhVWMBbcfxKIfeMyDuQKzT13o=
+		</data>
+		<key>res/shensui_style/filter.gpres</key>
+		<data>
+		gKlC76MgEBGzyZA6SbEEUVeD7dM=
+		</data>
+		<key>res/shensui_style/lip.gpres</key>
+		<data>
+		NQ76PH/OScum0ZaEmu49wqqLAjM=
+		</data>
+		<key>res/shensui_style/shadow.gpres</key>
+		<data>
+		+WxutRcT3x4T2C4KaMg9Ny/eOnw=
+		</data>
+		<key>res/strangeFace.gpres</key>
+		<data>
+		5KBzv1Bs2LSBc5XXOd53KC1STIk=
+		</data>
 		<key>res/sy_filter.gpres</key>
 		<data>
 		48Qo/oX8YiLKPj/rJc96nRh0Qqk=
@@ -344,6 +400,30 @@
 		<data>
 		rTgzMfgPlC0qd7TY+TtcXO8zoA0=
 		</data>
+		<key>res/touxiang_style/blusher.gpres</key>
+		<data>
+		IYqgtv+F7MEiNZlF4KT5eaXuICA=
+		</data>
+		<key>res/touxiang_style/brow.gpres</key>
+		<data>
+		7OnhVWMBbcfxKIfeMyDuQKzT13o=
+		</data>
+		<key>res/touxiang_style/default_lut.gpres</key>
+		<data>
+		D4baqJuWYlUXe9H/2v5guBzcBCw=
+		</data>
+		<key>res/touxiang_style/eyeshadow.gpres</key>
+		<data>
+		K9qD/Z3BbuvGMyVLwizMVIoITzA=
+		</data>
+		<key>res/touxiang_style/lash.gpres</key>
+		<data>
+		dkJo2DLcA0ZzEnz7QcrPVtnILSM=
+		</data>
+		<key>res/touxiang_style/lip_touxiang.gpres</key>
+		<data>
+		oXYEyKxgu+QCbCRl2iSKlcif1Qc=
+		</data>
 		<key>res/wgm_eyeshadow_1.gpres</key>
 		<data>
 		h20qD0ziz8Jz4+I8Ctmdhju2C9o=
@@ -355,6 +435,26 @@
 		<key>res/xc_lash.gpres</key>
 		<data>
 		jrZUjhBa05IwUvPpsPFXT0mLXCE=
+		</data>
+		<key>res/xuemei_style/brow.gpres</key>
+		<data>
+		adURgWra+zX2UoJ4PbirIgb+F4s=
+		</data>
+		<key>res/xuemei_style/eyeshadow.gpres</key>
+		<data>
+		TW1C6iRyVal9Msj5rKP80Y0EI8w=
+		</data>
+		<key>res/xuemei_style/filter.gpres</key>
+		<data>
+		eCYyX0GdorDn4A3SLCjj8tGx7ng=
+		</data>
+		<key>res/xuemei_style/lash.gpres</key>
+		<data>
+		csOpfBctfsit3GmatMa/kRedCsk=
+		</data>
+		<key>res/xuemei_style/lip.gpres</key>
+		<data>
+		wEdhzLz9QJdsvXW6sKDe9bihg+U=
 		</data>
 		<key>res/yaguang_style/blusher.gpres</key>
 		<data>
@@ -399,70 +499,63 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WATd7FtCr/R1/pLR3Fliv3ZJrChK5Y2o4vTCZraJ0Mc=
-			</data>
-		</dict>
-		<key>Headers/RTCFaceLandmarkDetector.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DOuH/8on/u5VQiQ4SS5jCvJw9UwSUSSdkn2t3SQs43c=
+			hvX1KfrLlUmCPDx+2f2gQ0zKdISkCyU484kRvHPjNAQ=
 			</data>
 		</dict>
 		<key>Headers/gpupixel-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jxoS0Te0WoQTQnZ0ju5hxbBH7GecXd5BAvbvWV03mLo=
+			73LL4i7/5U6DOMuRXMyD9Ss91yEbBTifilghU6AmXDw=
 			</data>
 		</dict>
 		<key>Headers/gpupixel.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aWvzm533Najy0zScjMJeVRrhHDvX4BeYeM+fCi4hSEw=
+			hS1R2bf4u7xMnAs1e9cjEoShq3+BujKV+FVFwWPHD/Y=
 			</data>
 		</dict>
 		<key>Modules/gpupixel.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XO7WZ+9XfczcSqyuGKAaRd2RVVBr8btcEju6Yp0rE/A=
+			VmBpEzv1ZJp7dwTCeXPOB4e0f65jB7+57Z32gwSnOyM=
 			</data>
 		</dict>
 		<key>Modules/gpupixel.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0IIqYswvXNqaY/H6Wyod7itturtQLLI0GEhxxOyzgwA=
+			VR14B/FAnYNgsiYn/WGvYR+2gZLNxjun2vyaRuX1Olc=
 			</data>
 		</dict>
 		<key>Modules/gpupixel.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M6zfEzxdsrIeBMasQVB7R9ZmTyO9iDZfx0EdRqFVH0c=
+			oe+gNlChbohFW3/YRpowKLjqFkNZsB9LnMlk+uQ1emw=
 			</data>
 		</dict>
 		<key>Modules/gpupixel.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3dCmUxHCUHoxh6BCTkS1z/albyS1uzik4xOs1/ZkifA=
+			jo+M3g9lt5tk+raycvlHctX97xbqhVim5o9TSERUGqE=
 			</data>
 		</dict>
 		<key>Modules/gpupixel.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M6zfEzxdsrIeBMasQVB7R9ZmTyO9iDZfx0EdRqFVH0c=
+			oe+gNlChbohFW3/YRpowKLjqFkNZsB9LnMlk+uQ1emw=
 			</data>
 		</dict>
 		<key>Modules/gpupixel.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AlJb6t6+O8Tq4D1lYdQQQF9z17NFTpOBQ9JZwhiB4Hc=
+			7+IXCZGZQz22Ugnz+qrkdCyB62AoKwZzUvabCNQEZl0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -619,6 +712,13 @@
 			1Dak2L4qSs0rLKC0WvDB8DXHp+8BRCzsshwpahcwxqk=
 			</data>
 		</dict>
+		<key>res/cook.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ij4YzKhG/bjRTwXBBsXFmesxTG2mVhvUsENe4cBNSX4=
+			</data>
+		</dict>
 		<key>res/cy_filter.gpres</key>
 		<dict>
 			<key>hash2</key>
@@ -631,6 +731,13 @@
 			<key>hash2</key>
 			<data>
 			xV9sfM0fus8NQOEjJ8R++bFqf+pMsa7+TkFzcsTC4Cw=
+			</data>
+		</dict>
+		<key>res/dogFace.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6YRu9FC8yaIa8NRd45ULBJAo/uGdJfE2CTIU3yXlvAg=
 			</data>
 		</dict>
 		<key>res/eyeShadow_nx.gpres</key>
@@ -736,6 +843,48 @@
 			<key>hash2</key>
 			<data>
 			8qA3Kiuag3vp0bOUWgDZlOKf816Qmgq5oDDK8RBtP8I=
+			</data>
+		</dict>
+		<key>res/hanxi_style/brow.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8AtoPtIQqyY8m9gJOeFX0wN4sF7H38so/mCqFmTn9ew=
+			</data>
+		</dict>
+		<key>res/hanxi_style/default_lips.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AAH04OmD+N1ig6u03+odPFBvgmpylnUslogsJPPZ6GI=
+			</data>
+		</dict>
+		<key>res/hanxi_style/eyeshadow.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OZmpvhXX2oC4Mo3tiOw/gdYIUtV1VMe39IKM3GBGc+o=
+			</data>
+		</dict>
+		<key>res/hanxi_style/filter.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			g7c0piV2zlC1ygQ8TPC6fV5gnA0d619pTArHNojzh24=
+			</data>
+		</dict>
+		<key>res/hanxi_style/lash.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eM6/gV682bD2+Zsuc1TF3f5u/GfYzcK7NlCg9KsRzT8=
+			</data>
+		</dict>
+		<key>res/iris.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TDTEXZ1IJMyr91LP66w+kLmmrm8jluo2e3ZDkFIhWGo=
 			</data>
 		</dict>
 		<key>res/joker_style/blusher.gpres</key>
@@ -955,6 +1104,55 @@
 			KADaCYx3itex8FKELHaSzz2A/tXt7wflTHI/fJDr2dA=
 			</data>
 		</dict>
+		<key>res/shensui_filter.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZWrRzgwJJl9ciHn23lgAzTxzWlSqHPpe8NMuITBoOJU=
+			</data>
+		</dict>
+		<key>res/shensui_style/blusher.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			c1whzSGYgLswErKP5XKwVEmyVh1HS5jrbbM+FJkN9EI=
+			</data>
+		</dict>
+		<key>res/shensui_style/brow.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZpLYoVB07EMF7bEtmlA1O/fdWVq2eGHtVwYYyQ+VXZY=
+			</data>
+		</dict>
+		<key>res/shensui_style/filter.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZWrRzgwJJl9ciHn23lgAzTxzWlSqHPpe8NMuITBoOJU=
+			</data>
+		</dict>
+		<key>res/shensui_style/lip.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wcNxNzdKKgaLB823AqWNCs2qxr1YiJU9i2RpEEpyij4=
+			</data>
+		</dict>
+		<key>res/shensui_style/shadow.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			m9s4u7KsVUXE8qwImEUVIti5yLimQYkZNI/Ujv7ClLI=
+			</data>
+		</dict>
+		<key>res/strangeFace.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NRV0dnbvRjANPVySg9xnUnaEdnTkLre61UwIEuhGupY=
+			</data>
+		</dict>
 		<key>res/sy_filter.gpres</key>
 		<dict>
 			<key>hash2</key>
@@ -983,6 +1181,48 @@
 			2tD8mdnttafvTJhu0qtr/d8Tjgxcd5HZmxwMDciBVuA=
 			</data>
 		</dict>
+		<key>res/touxiang_style/blusher.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DLlz2mry2BuH0/yDjnX9IKRhiGULsKwBR5IiHjJAgzo=
+			</data>
+		</dict>
+		<key>res/touxiang_style/brow.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZpLYoVB07EMF7bEtmlA1O/fdWVq2eGHtVwYYyQ+VXZY=
+			</data>
+		</dict>
+		<key>res/touxiang_style/default_lut.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VP54ohhY8cguZwQ+o50q1iQ0JmmJx/TgG66LrJuFAkw=
+			</data>
+		</dict>
+		<key>res/touxiang_style/eyeshadow.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2aFQ2mLgLhTPZujfIF7P+qtQNoc6yJk3Ybd23ILe03g=
+			</data>
+		</dict>
+		<key>res/touxiang_style/lash.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ROMusOJcyyr+kSZHGurqEKF0Dk2jaCQ+JIStDn438fU=
+			</data>
+		</dict>
+		<key>res/touxiang_style/lip_touxiang.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UL6lCXl4OcA7zJLLTRibUe8mDanpvNfi9RRokZBLxfM=
+			</data>
+		</dict>
 		<key>res/wgm_eyeshadow_1.gpres</key>
 		<dict>
 			<key>hash2</key>
@@ -1002,6 +1242,41 @@
 			<key>hash2</key>
 			<data>
 			yc+ghk667p4qnth57Cnf2XQ8JK+aepCH6Jh1Wj0kTR8=
+			</data>
+		</dict>
+		<key>res/xuemei_style/brow.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8AtoPtIQqyY8m9gJOeFX0wN4sF7H38so/mCqFmTn9ew=
+			</data>
+		</dict>
+		<key>res/xuemei_style/eyeshadow.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XW9cgg2w+G0xtFsWuQBFyo2eXrkOAywPnjLJhloRp+w=
+			</data>
+		</dict>
+		<key>res/xuemei_style/filter.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+W1ft6AJUc6zgVufkMwpGZTzq7iHI1dMTSbWY+Z+1WE=
+			</data>
+		</dict>
+		<key>res/xuemei_style/lash.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tMRV2lhFFS4ENp8qzMJPMCjurPJBqCWI5733cm76pXU=
+			</data>
+		</dict>
+		<key>res/xuemei_style/lip.gpres</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZRi8EeWbepjWAN5JiPnuvjMEBL3eMUHAqE6x7BaXJ8g=
 			</data>
 		</dict>
 		<key>res/yaguang_style/blusher.gpres</key>

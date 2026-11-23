@@ -17,11 +17,6 @@
 #elif __has_include("iOS/Filter/Objc/RTCBeautyFilter.h")
 #import "iOS/Filter/Objc/RTCBeautyFilter.h"
 #endif
-#if __has_include(<gpupixel/RTCFaceLandmarkDetector.h>)
-#import <gpupixel/RTCFaceLandmarkDetector.h>
-#elif __has_include("iOS/Filter/Objc/RTCFaceLandmarkDetector.h")
-#import "iOS/Filter/Objc/RTCFaceLandmarkDetector.h"
-#endif
 #endif
 
 #ifdef __cplusplus
@@ -69,6 +64,9 @@
 // general filters
 #include "gpupixel/filter/bilateral_filter.h"
 #include "gpupixel/filter/box_blur_filter.h"
+#include "gpupixel/filter/soft_blur_filter.h"
+#include "gpupixel/filter/grain_filter.h"
+#include "gpupixel/filter/glow_filter.h"
 #include "gpupixel/filter/box_high_pass_filter.h"
 #include "gpupixel/filter/brightness_filter.h"
 #include "gpupixel/filter/canny_edge_detection_filter.h"
@@ -105,6 +103,7 @@
 #include "gpupixel/filter/toon_filter.h"
 #include "gpupixel/filter/weak_pixel_inclusion_filter.h"
 #include "gpupixel/filter/white_balance_filter.h"
+#include "gpupixel/filter/temperature_filter.h"
 #include "gpupixel/filter/background_segment_filter.h"
 #include "gpupixel/filter/background_segment_filter2.h"
 #include "gpupixel/filter/effect_glitch_filter.h"
@@ -128,7 +127,6 @@
 #include "gpupixel/filter/highlight_shadow_filter.h"
 #include "gpupixel/filter/vignette_filter.h"
 #include "gpupixel/filter/lookup_filter.h"
-#include "gpupixel/filter/glasses_filter.h"
 #include "gpupixel/filter/transform_filter.h"
 #include "gpupixel/filter/sticker2d_effect.h"
 #include "gpupixel/filter/effect_white_filter.h"
@@ -141,6 +139,12 @@
 #include "gpupixel/filter/christmas_filter.h"
 #include "gpupixel/filter/joker_filter.h"
 #include "gpupixel/filter/ya_guang_filter.h"
+#include "gpupixel/filter/shensui_filter.h"
+#include "gpupixel/filter/iris_filter.h"
+#include "gpupixel/filter/touxiang_filter.h"
+#include "gpupixel/filter/xuemei_filter.h"
+#include "gpupixel/filter/hanxi_filter.h"
+
 //#include "gpupixel/filter/blue_girl_filter.h"
 
 namespace gpupixel {
